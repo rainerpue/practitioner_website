@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Advent+Pro:100,200,300,400,500,600,700|Quicksand:300,400,500,700|Poppins:100,200,300,400,500,600,700,800');
 
-body {
-   }
+body {}
 
 /*-----------------------------------------Colour */
 
@@ -90,12 +89,12 @@ body {
 }
 
 .opaque-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
 }
 
 .attention {
@@ -104,6 +103,8 @@ body {
     font-family: "Advent Pro", sans-serif;
     font-size: 40px;
     font-weight: 600;
+    padding-left: 15px;
+    padding-top: 300px;
 }
 
 /*-----------------------------------------media queries */
@@ -118,8 +119,14 @@ body {
 
 @media (min-width: 768px) {
     .attention {
-        padding-left: 15px;
         width: 60%;
-        font-size: 70px;
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 992px) {
+    .attention {
+        width: 80%;
+        font-size: 50px;
     }
 }
