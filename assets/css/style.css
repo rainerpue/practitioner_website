@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Advent+Pro:100,200,300,400,500,600,700|Quicksand:300,400,500,700|Poppins:100,200,300,400,500,600,700,800');
 
+body {
+   }
 
 /*-----------------------------------------Colour */
 
@@ -14,6 +16,14 @@
     text-transform: uppercase;
 }
 
+/*-----------------------------------------buttons */
+
+.btn--home {
+    text-decoration: none;
+    color: #fff;
+    border-radius: 15px;
+    font-size: 30px;
+}
 
 /*-----------------------------------------logo */
 
@@ -64,6 +74,38 @@
     background-color: #384955;
 }
 
+/*-----------------------------------------full background image with attention */
+
+.home-image {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    position: relative;
+    background: url(../images/home-image.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-top: 100px;
+}
+
+.opaque-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.attention {
+    width: 80%;
+    color: #fafafa;
+    font-family: "Advent Pro", sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+}
+
 /*-----------------------------------------media queries */
 
 /*-----------------------------------------media query to add navbar blue background color on bigger screens */
@@ -71,5 +113,13 @@
 @media (min-width: 768px) {
     .bg-blue {
         background-color: #CEEAFF;
+    }
+}
+
+@media (min-width: 768px) {
+    .attention {
+        padding-left: 15px;
+        width: 60%;
+        font-size: 70px;
     }
 }
