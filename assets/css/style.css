@@ -54,6 +54,11 @@ body {}
 
 .navbar {
     padding: 0;
+    text-align: center;
+}
+
+.navbar-collapse {
+    background-color: #CEEAFF
 }
 
 .nav-item {
