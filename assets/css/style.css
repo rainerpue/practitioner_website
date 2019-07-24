@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Advent+Pro:100,200,300,400,500,600,700|Quicksand:300,400,500,700|Poppins:100,200,300,400,500,600,700,800');
 
-*,
-::after,
-::before {
-    box-sizing: border-box;
-}
 
 /*-----------------------------------------Colour */
+
+.bg-blue {
+    background-color: transparent;
+}
+
 
 /*-----------------------------------------Special paddings/margins/texts */
 
@@ -32,64 +32,44 @@
 
 /*-----------------------------------------burger icon */
 
-.navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+.fa-bars {
+    font-size: 30px;
+    padding: 5px;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: rgba(0, 0, 0, .3);
 }
 
 /*-----------------------------------------nav */
 
-.nav {
-    display: flex;
+.navbar {
     padding: 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 100px;
-    background-color: #CEEAFF;
-    align-items: center;
 }
 
-.navlist {
-    display: flex;
-
-    padding: 0;
-    list-style: none;
+.nav-item {
+    padding-left: 15px;
 }
 
-.menu-items {
-    width: 50px;
-    margin: 60px 15px 30px;
-    text-align: center;
-    font-family: "poppins", sans-serif;
-    font-weight: 500;
-    font-size: 15px;
-}
-
-.menu-items a {
-    text-decoration: none;
+.nav-item a {
     color: #384955;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
     transition: background-color .2s ease-in-out, color .2s ease-in-out;
 }
 
-/*-----------------------------------------hover style for menu items */
-.menu-items a:hover {
+.nav-item a:hover {
+    color: #CEEAFF!important;
     background-color: #384955;
-    color: #CEEAFF;
-}
-
-/*-----------------------------------------to increase width of menu items with longer content */
-.long-item1 {
-    width: 150px;
-    margin-top: 45px;
-    margin-left: 0;
-    margin-right: 0;
-}
-
-.long-item2 {
-    width: 180px;
-    margin-left: 0;
-    margin-right: 0;
 }
 
 /*-----------------------------------------media queries */
+
+/*-----------------------------------------media query to add navbar blue background color on bigger screens */
+
+@media (min-width: 768px) {
+    .bg-blue {
+        background-color: #CEEAFF;
+    }
+}
