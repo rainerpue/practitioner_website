@@ -8,11 +8,27 @@ body {}
     background-color: transparent;
 }
 
+.bg-slide {
+    background-color: #384955;
+}
+
 
 /*-----------------------------------------Special paddings/margins/texts */
 
 .text-uppercase {
     text-transform: uppercase;
+}
+
+.text-center {
+    text-align: center;
+}
+
+h3 {
+    padding-top: 15px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    font-size: 30px;   
+    color: #FAE2CB;
 }
 
 /*-----------------------------------------buttons */
@@ -82,7 +98,7 @@ body {}
 
 .home-image {
     display: flex;
-    min-height: 100vh;
+    min-height: 95vh;
     align-items: center;
     position: relative;
     background: url(../images/home-image.jpg) no-repeat center center fixed;
@@ -112,6 +128,24 @@ body {}
     padding-top: 300px;
 }
 
+/*-----------------------------------------full background image with attention */
+
+.slide {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 50vh;
+    text-align: center;
+    padding: 5px 30px;
+}
+
+quote {
+    font-family: "Advent Pro", sans-serif;
+    font-weight: 500;
+    font-size: 30px;   
+    color: #FAE2CB;
+}
+
 /*-----------------------------------------media queries */
 
 /*-----------------------------------------media query to add navbar blue background color on bigger screens */
@@ -133,5 +167,11 @@ body {}
     .attention {
         width: 80%;
         font-size: 50px;
+    }
+}
+
+@media (min-width: 768px) {
+    .slide {
+        min-height: 30vh;
     }
 }
