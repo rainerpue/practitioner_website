@@ -12,8 +12,24 @@ body {}
     background-color: #384955;
 }
 
+.bg-intro {
+    background-color: #FAE2CB;
+}
+
+.color-slide {
+    color: #FAE2CB;
+}
+
+.color-intro {
+    color: #384955;
+}
 
 /*-----------------------------------------Special paddings/margins/texts */
+
+.container-fluid {
+    padding: 0;
+    margin: 0;
+}
 
 .text-uppercase {
     text-transform: uppercase;
@@ -21,24 +37,50 @@ body {}
 
 .text-center {
     text-align: center;
+    margin: 0;
 }
 
 h3 {
     padding-top: 15px;
     font-family: "Quicksand", sans-serif;
     font-weight: 500;
-    font-size: 30px;   
-    color: #FAE2CB;
+    font-size: 30px;
 }
 
 /*-----------------------------------------buttons */
 
-.btn--home {
-    text-decoration: none;
-    color: #fff;
+.btn--gal {
+    margin-bottom: 20px;
     border-radius: 15px;
-    font-size: 30px;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
 }
+
+.btn--grey {
+    background-color: #384955;
+    border-color: #384955;
+    color: #fafafa;
+}
+
+.btn--coral {
+    background-color: #FAE2CB;
+    border-color: #FAE2CB;
+    color: #384955;
+
+}
+
+/*-----------------------------------------section divider */
+
+.section-divider {
+    width: 75px;
+    height: 5px;
+    border: 0;
+    background-color: #fafafa;
+    margin: 0;
+    text-align: center;
+}
+
 
 /*-----------------------------------------logo */
 
@@ -64,6 +106,7 @@ h3 {
 
 .navbar-light .navbar-toggler {
     border-color: rgba(0, 0, 0, .3);
+    margin-right: 15px;
 }
 
 /*-----------------------------------------nav */
@@ -97,7 +140,6 @@ h3 {
 /*-----------------------------------------full background image with attention */
 
 .home-image {
-    display: flex;
     min-height: 95vh;
     align-items: center;
     position: relative;
@@ -125,25 +167,41 @@ h3 {
     font-size: 40px;
     font-weight: 600;
     padding-left: 15px;
-    padding-top: 300px;
+    padding-top: 200px;
 }
 
-/*-----------------------------------------full background image with attention */
+/*-----------------------------------------testimonials in carrousel */
 
 .slide {
     position: relative;
     display: flex;
     align-items: center;
-    min-height: 50vh;
+    min-height: 30vh;
     text-align: center;
     padding: 5px 30px;
 }
 
-quote {
+blockquote {
+    width: 80px;
     font-family: "Advent Pro", sans-serif;
     font-weight: 500;
-    font-size: 30px;   
-    color: #FAE2CB;
+    font-size: 30px;
+}
+
+/*-----------------------------------------intro section */
+
+.intro {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    min-height: 20vh;
+}
+
+.content-intro {
+    font-family: "Advent Pro", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
 }
 
 /*-----------------------------------------media queries */
@@ -158,6 +216,7 @@ quote {
 
 @media (min-width: 768px) {
     .attention {
+        padding-top: 400px;
         width: 60%;
         font-size: 50px;
     }
@@ -165,13 +224,23 @@ quote {
 
 @media (min-width: 992px) {
     .attention {
-        width: 80%;
+        width: 60%;
         font-size: 50px;
     }
 }
 
 @media (min-width: 768px) {
     .slide {
-        min-height: 30vh;
+        min-height: 20vh;
     }
 }
+
+@media (min-width: 768px) {
+    .section-divider {
+        width: 0px;
+        height: 0px;
+        border: 0;
+    }
+}
+
+
