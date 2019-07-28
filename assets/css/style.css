@@ -47,7 +47,17 @@ h3 {
     font-size: 30px;
 }
 
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
 /*-----------------------------------------buttons */
+
+.btn:hover {
+    color: #fafafa;
+    text-decoration: none;
+}
 
 .btn--gal {
     margin-bottom: 20px;
@@ -60,14 +70,25 @@ h3 {
 .btn--grey {
     background-color: #384955;
     border-color: #384955;
-    color: #fafafa;
+    color: #FAE2CB;
+}
+
+.btn--grey:hover {
+    color: #FF8863;
 }
 
 .btn--coral {
     background-color: #FAE2CB;
     border-color: #FAE2CB;
     color: #384955;
+}
 
+.btn--coral:hover {
+    color: #87B0CD;
+}
+
+.btn--footer {
+    color: #FAE2CB;
 }
 
 /*-----------------------------------------section divider */
@@ -117,7 +138,7 @@ h3 {
 }
 
 .navbar-collapse {
-    background-color: #CEEAFF
+    background-color: #FAE2CB
 }
 
 .nav-item {
@@ -133,7 +154,7 @@ h3 {
 }
 
 .nav-item a:hover {
-    color: #CEEAFF!important;
+    color: #FAE2CB!important;
     background-color: #384955;
 }
 
@@ -188,7 +209,7 @@ blockquote {
     font-size: 30px;
 }
 
-/*-----------------------------------------intro section */
+/*-----------------------------------------home intro section */
 
 .intro {
     width: 100%;
@@ -204,13 +225,74 @@ blockquote {
     margin-bottom: 20px;
 }
 
+/*-----------------------------------------footer */
+
+.footer {
+    background-color: #384955;
+    margin: 0;
+}
+
+.footer-row {
+    padding: 0 15px;
+}
+
+.footer-contact {
+    font-family: "Advent Pro", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FAE2CB;
+}
+
+.footer-contact a {
+    margin-bottom: 0;
+}
+
+.footer-contact p {
+    margin: 0;
+    font-weight: 400;
+    font-size: 20px;
+    padding-left: 15px;
+}
+
+.footer-contact h5 {
+    margin: 0;
+    font-weight: 400;
+    font-size: 20px;
+    padding-left: 15px;
+}
+
+.socialmedia {
+    padding-left: 15px;
+}
+
+.socialmedia i {
+    width: 32px;
+    height: 32px;
+    padding: 12px 0;
+    border-radius: 50%;
+    font-size: 13px;
+    line-height: 7px;
+    text-align: center;
+    color: #384955;
+    background: #FAE2CB;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.social-links i:hover {
+    background: #e84610;
+}
+
 /*-----------------------------------------media queries */
 
 /*-----------------------------------------media query to add navbar blue background color on bigger screens */
 
 @media (min-width: 768px) {
     .bg-blue {
-        background-color: #CEEAFF;
+        background-color: #FAE2CB;
     }
 }
 
