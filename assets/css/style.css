@@ -4,7 +4,7 @@ body {}
 
 /*-----------------------------------------Colour */
 
-.bg-blue {
+.bg-coral {
     background-color: transparent;
 }
 
@@ -238,7 +238,7 @@ blockquote {
 
 .footer-contact {
     font-family: "Advent Pro", sans-serif;
-    display: flex;
+    text-align: center;
     align-items: center;
     justify-content: center;
     color: #FAE2CB;
@@ -291,7 +291,7 @@ blockquote {
 /*-----------------------------------------media query to add navbar blue background color on bigger screens */
 
 @media (min-width: 768px) {
-    .bg-blue {
+    .bg-coral {
         background-color: #FAE2CB;
     }
 }
@@ -322,6 +322,12 @@ blockquote {
         width: 0px;
         height: 0px;
         border: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .footer-contact {
+        display: flex;
     }
 }
 
