@@ -40,6 +40,7 @@ h3 {
     font-family: "Quicksand", sans-serif;
     font-weight: 500;
     font-size: 30px;
+    text-decoration: underline dotted;
 }
 
 a {
@@ -56,11 +57,12 @@ a {
 
 .btn--gal {
     margin-bottom: 20px;
+    margin-top: 10px;
     border-radius: 15px;
     font-size: 20px;
     text-decoration: none;
     cursor: pointer;
-}
+    }
 
 .btn--grey {
     background-color: #384955;
@@ -221,11 +223,6 @@ blockquote {
     margin-bottom: 20px;
 }
 
-.about-details {
-    margin: 0;
-    padding: 0;
-}
-
 /*-----------------------------------------footer */
 
 .footer {
@@ -301,13 +298,20 @@ blockquote {
     position: relative;
     }
     
+.about-details {
+    padding-top: 10px;
+}
+    
 .about-content {
+    min-height: 25vh;
     position: relative;
     display: flex;
-    align-items: center;
-    min-height: 30vh;
     text-align: center;
     padding: 5px 30px;
+    line-height: 200%;
+    font-family: "Advent Pro", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
 }
 
 /*-----------------------------------------media queries */
