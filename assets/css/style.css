@@ -4,25 +4,20 @@ body {}
 
 /*-----------------------------------------Colour */
 
-.bg-coral {
+.nav-coral {
     background-color: transparent;
 }
 
-.bg-slide {
+.bg-grey {
     background-color: #384955;
-}
-
-.bg-intro {
-    background-color: #FAE2CB;
-}
-
-.color-slide {
     color: #FAE2CB;
 }
 
-.color-intro {
+.bg-coral {
+    background-color: #FAE2CB;
     color: #384955;
 }
+
 
 /*-----------------------------------------Special paddings/margins/texts */
 
@@ -135,6 +130,7 @@ a {
 .navbar {
     padding: 0;
     text-align: center;
+    overflow: auto;
 }
 
 .navbar-collapse {
@@ -225,6 +221,11 @@ blockquote {
     margin-bottom: 20px;
 }
 
+.about-details {
+    margin: 0;
+    padding: 0;
+}
+
 /*-----------------------------------------footer */
 
 .footer {
@@ -286,12 +287,35 @@ blockquote {
     background: #e84610;
 }
 
+/*-----------------------------------------about page */
+
+.about-image {
+    min-height: 30vh;
+    background: url(../images/about-image.jpg);
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    width: 100vw;
+    background-repeat: no-repeat;
+    position: relative;
+    }
+    
+.about-content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 30vh;
+    text-align: center;
+    padding: 5px 30px;
+}
+
 /*-----------------------------------------media queries */
 
-/*-----------------------------------------media query to add navbar blue background color on bigger screens */
+/*-----------------------------------------media query to add navbar color background color on bigger screens */
 
 @media (min-width: 768px) {
-    .bg-coral {
+    .nav-coral {
         background-color: #FAE2CB;
     }
 }
@@ -299,13 +323,6 @@ blockquote {
 @media (min-width: 768px) {
     .attention {
         padding-top: 400px;
-        width: 60%;
-        font-size: 50px;
-    }
-}
-
-@media (min-width: 992px) {
-    .attention {
         width: 60%;
         font-size: 50px;
     }
