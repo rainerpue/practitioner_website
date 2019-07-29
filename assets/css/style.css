@@ -22,7 +22,6 @@ body {}
 /*-----------------------------------------Special paddings/margins/texts */
 
 .container-fluid {
-    padding: 0;
     margin: 0;
 }
 
@@ -303,7 +302,8 @@ blockquote {
 }
 
 .about-intro {
-    padding: 10px 0 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
 }
 
 .about-sm-img {
