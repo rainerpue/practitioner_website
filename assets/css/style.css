@@ -36,16 +36,22 @@ body {}
 }
 
 h3 {
-    padding-top: 15px;
+    padding: 15px 0 15px;
     font-family: "Quicksand", sans-serif;
     font-weight: 500;
     font-size: 30px;
-    text-decoration: underline dotted;
+    text-decoration: underline;
 }
 
 a {
     text-decoration: none;
     cursor: pointer;
+}
+
+.section-column {
+    display: table-cell;
+    padding: 0 30px 0;
+    float: none;
 }
 
 /*-----------------------------------------buttons */
@@ -56,13 +62,13 @@ a {
 }
 
 .btn--gal {
-    margin-bottom: 20px;
-    margin-top: 10px;
+    margin-bottom: 0;
+    margin-top: 0;
     border-radius: 15px;
     font-size: 20px;
     text-decoration: none;
     cursor: pointer;
-    }
+}
 
 .btn--grey {
     background-color: #384955;
@@ -95,8 +101,6 @@ a {
     height: 5px;
     border: 0;
     background-color: #fafafa;
-    margin: 0;
-    text-align: center;
 }
 
 
@@ -137,7 +141,7 @@ a {
 
 .navbar-collapse {
     background-color: #FAE2CB
-}
+    }
 
 .nav-item {
     padding-left: 15px;
@@ -191,6 +195,10 @@ a {
 
 /*-----------------------------------------testimonials in carrousel */
 
+.testimonials {
+    padding-bottom: 20px;
+}
+
 .slide {
     position: relative;
     display: flex;
@@ -198,6 +206,7 @@ a {
     min-height: 30vh;
     text-align: center;
     padding: 5px 30px;
+    margin-bottom: 20px
 }
 
 blockquote {
@@ -212,7 +221,7 @@ blockquote {
 .intro {
     width: 100%;
     padding: 0;
-    margin: 0;
+    padding-bottom: 20px;
     min-height: 20vh;
 }
 
@@ -225,13 +234,10 @@ blockquote {
 
 /*-----------------------------------------footer */
 
-.footer {
-    background-color: #384955;
-    margin: 0;
-}
-
 .footer-row {
     padding: 0 15px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .footer-contact {
@@ -240,30 +246,21 @@ blockquote {
     align-items: center;
     justify-content: center;
     color: #FAE2CB;
-}
-
-.footer-contact a {
-    margin-bottom: 0;
+    padding: 0;
+    margin: 0;
 }
 
 .footer-contact p {
-    margin: 0;
     font-weight: 400;
     font-size: 20px;
-    padding-left: 15px;
+
 }
 
 .footer-contact h5 {
-    margin: 0;
     font-weight: 400;
     font-size: 20px;
-    padding-left: 15px;
-}
-
-.socialmedia {
-    padding-left: 15px;
-}
-
+    }
+    
 .socialmedia i {
     width: 32px;
     height: 32px;
@@ -296,12 +293,17 @@ blockquote {
     width: 100vw;
     background-repeat: no-repeat;
     position: relative;
-    }
-    
-.about-details {
-    padding-top: 10px;
 }
-    
+
+.about-intro {
+    padding: 10px 0 20px;
+}
+
+.about-sm-img {
+    position: relative;
+    align-items: center;
+}
+
 .about-content {
     min-height: 25vh;
     position: relative;
@@ -312,6 +314,52 @@ blockquote {
     font-family: "Advent Pro", sans-serif;
     font-size: 20px;
     font-weight: 400;
+}
+
+.timeline {
+    margin: 0;
+}
+
+.timeline-item {
+    padding: 4em 2em 0em 2em;
+    position: relative;
+    color: #384955;
+    border-left: 1px solid;
+    font-family: "Advent Pro", sans-serif;
+}
+
+.timeline-item p {
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item:before {
+    content: attr(data-dates);
+    position: absolute;
+    left: 2.5em;
+    top: 3em;
+    display: block;
+    font-family: "Advent Pro", sans-serif;
+    font-weight: 500;
+    font-size: 0.8em;
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item:after {
+    width: 12px;
+    height: 12px;
+    display: block;
+    position: absolute;
+    top: 2.4em;
+    left: -6px;
+    border-radius: 12px;
+    content: "";
+    background-color: #384955;
+}
+
+.history-items {
+    margin: 0 0 30px;
 }
 
 /*-----------------------------------------media queries */
@@ -352,4 +400,13 @@ blockquote {
     }
 }
 
+@media (min-width: 768px) {
+    .footer-contact h5 p a {
+        padding-left: 15px;
+    }
+}
 
+@media (min-width: 768px) {
+.section-column {
+    padding: 0 50px 0;
+    }
