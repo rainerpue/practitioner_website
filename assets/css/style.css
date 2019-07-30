@@ -18,6 +18,13 @@ body {}
     color: #384955;
 }
 
+/*-----------------------------------------Images */
+
+.sm-img {
+    max-height: 400px;
+    max-width: 400px;
+}
+
 
 /*-----------------------------------------Special paddings/margins/texts */
 
@@ -32,6 +39,11 @@ body {}
 .text-center {
     text-align: center;
     margin: 0;
+}
+
+main {
+    margin: 0;
+    padding: 0;
 }
 
 h3 {
@@ -57,6 +69,11 @@ a {
     display: table-cell;
     padding: 0 30px 30px;
     float: none;
+}
+
+.intro-section {
+    padding-top: 10px;
+    padding-bottom: 20px;
 }
 
 /*-----------------------------------------buttons */
@@ -305,12 +322,6 @@ blockquote {
 
 /*-----------------------------------------about page */
 
-.about-section {
-    margin: 0;
-    padding: 0;
-    min-height: 25vh;
-}
-
 .about-image {
     min-height: 30vh;
     background: url(../images/about-image.jpg);
@@ -323,17 +334,13 @@ blockquote {
     position: relative;
 }
 
-.about-intro {
-    padding-top: 10px;
-    padding-bottom: 20px;
-}
 
-.about-sm-img {
-    position: relative;
+
+.about-details {
+    min-height: 25vh;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center;
-    justify-content: center;
+            align-items: center!important;
 }
 
 .about-content {
@@ -412,6 +419,20 @@ blockquote {
 .qualif-section {
     padding: 30px 0 30px;
     line-height: 200%;
+}
+
+/*-----------------------------------------Qigong image */
+
+.qigong-image {
+    min-height: 30vh;
+    background: url(../images/lotus.jpg);
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    width: 100vw;
+    background-repeat: no-repeat;
+    position: relative;
 }
 
 /*-----------------------------------------media queries */
