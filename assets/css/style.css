@@ -305,6 +305,11 @@ blockquote {
 
 /*-----------------------------------------about page */
 
+.about-section {
+    margin: 0;
+    padding: 0;
+}
+
 .about-image {
     min-height: 30vh;
     background: url(../images/about-image.jpg);
@@ -336,7 +341,9 @@ blockquote {
     display: -ms-flexbox;
     display: flex;
     text-align: center;
-    padding: 5px 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 30px;
     line-height: 200%;
     font-family: "Advent Pro", sans-serif;
     font-size: 20px;
