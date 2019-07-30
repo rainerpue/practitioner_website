@@ -126,6 +126,7 @@ a {
     white-space: nowrap;
     background-position: center;
     background-repeat: no-repeat;
+     -o-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
@@ -164,6 +165,8 @@ a {
     font-family: "Quicksand", sans-serif;
     font-weight: 500;
     font-size: 20px;
+    -webkit-transition: background-color .2s ease-in-out, color .2s ease-in-out;
+    -o-transition: background-color .2s ease-in-out, color .2s ease-in-out;
     transition: background-color .2s ease-in-out, color .2s ease-in-out;
 }
 
@@ -176,12 +179,11 @@ a {
 
 .home-image {
     min-height: 95vh;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     position: relative;
     background: url(../images/home-image.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
     padding-top: 100px;
 }
@@ -213,8 +215,12 @@ a {
 
 .slide {
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     min-height: 30vh;
     text-align: center;
     padding: 5px 30px;
@@ -255,8 +261,12 @@ blockquote {
 .footer-contact {
     font-family: "Advent Pro", sans-serif;
     text-align: center;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     color: #FAE2CB;
     padding: 0;
     margin: 0;
@@ -314,12 +324,16 @@ blockquote {
 
 .about-sm-img {
     position: relative;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .about-content {
     min-height: 25vh;
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     text-align: center;
     padding: 5px 30px;
@@ -420,6 +434,8 @@ blockquote {
 
 @media (min-width: 768px) {
     .footer-contact {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
 }
