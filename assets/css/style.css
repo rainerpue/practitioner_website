@@ -348,6 +348,15 @@ blockquote {
     font-weight: 400;
 }
 
+.links {
+    color: #FAE2CB;
+    font-weight: 700;
+}
+
+.links:hover {
+    color: #FF8863;
+}
+
 /*-----------------------------------------timeline */
 
 .timeline {
@@ -454,6 +463,7 @@ blockquote {
 @media (min-width: 768px) {
     .history-items {
         border: 10px solid;
+        border-bottom: none;
     }
 }
 
@@ -462,11 +472,3 @@ blockquote {
         padding: 0 50px 0;
     }
     
-@media (min-width:768px) {
-    .about-content {
-    position: relative;
-    -webkit-box-align: auto;
-        -ms-flex-align: auto;
-            align-items: auto;
-}
-}
