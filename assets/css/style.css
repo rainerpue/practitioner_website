@@ -76,6 +76,13 @@ a {
     padding-bottom: 20px;
 }
 
+.section-details {
+    min-height: 25vh;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center!important;
+}
+
 /*-----------------------------------------buttons */
 
 .btn:hover {
@@ -334,21 +341,11 @@ blockquote {
     position: relative;
 }
 
-
-
-.about-details {
-    min-height: 25vh;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center!important;
-}
-
-.about-content {
+.main-content {
     position: relative;
-    text-align: center;
     padding-top: 5px;
     padding-bottom: 5px;
-    padding-left: 30px;
+    padding-right: 30px;
     line-height: 200%;
     font-family: "Advent Pro", sans-serif;
     font-size: 20px;
