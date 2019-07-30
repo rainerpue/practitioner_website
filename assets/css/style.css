@@ -308,6 +308,7 @@ blockquote {
 .about-section {
     margin: 0;
     padding: 0;
+    min-height: 25vh;
 }
 
 .about-image {
@@ -332,14 +333,11 @@ blockquote {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    justify-content: center;
 }
 
 .about-content {
-    min-height: 25vh;
     position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     text-align: center;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -463,3 +461,12 @@ blockquote {
     .section-column {
         padding: 0 50px 0;
     }
+    
+@media (min-width:768px) {
+    .about-content {
+    position: relative;
+    -webkit-box-align: auto;
+        -ms-flex-align: auto;
+            align-items: auto;
+}
+}
