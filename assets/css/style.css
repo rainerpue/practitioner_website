@@ -20,6 +20,25 @@ body {}
 
 /*-----------------------------------------Images */
 
+.about-img {
+    background: url(../images/about-image.jpg);
+}
+
+.qigong-img {
+    background: url(../images/lotus.jpg);
+}
+
+.banner-image {
+    min-height: 30vh;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    width: 100vw;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
 .sm-img {
     max-height: 400px;
     max-width: 400px;
@@ -327,19 +346,7 @@ blockquote {
     background: #e84610;
 }
 
-/*-----------------------------------------about page */
-
-.about-image {
-    min-height: 30vh;
-    background: url(../images/about-image.jpg);
-    -webkit-background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    -o-background-size: 100% 100%;
-    background-size: 100% 100%;
-    width: 100vw;
-    background-repeat: no-repeat;
-    position: relative;
-}
+/*-----------------------------------------main content for each page */
 
 .main-content {
     position: relative;
@@ -351,6 +358,8 @@ blockquote {
     font-size: 20px;
     font-weight: 400;
 }
+
+/*-----------------------------------------links to other websites on about page */
 
 .links {
     color: #FAE2CB;
@@ -418,18 +427,10 @@ blockquote {
     line-height: 200%;
 }
 
-/*-----------------------------------------Qigong image */
+/*-----------------------------------------Qigong page */
 
-.qigong-image {
-    min-height: 30vh;
-    background: url(../images/lotus.jpg);
-    -webkit-background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    -o-background-size: 100% 100%;
-    background-size: 100% 100%;
-    width: 100vw;
-    background-repeat: no-repeat;
-    position: relative;
+.qigong-p {
+    padding: 15px;
 }
 
 /*-----------------------------------------media queries */
