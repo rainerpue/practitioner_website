@@ -88,6 +88,7 @@ a {
     display: table-cell;
     padding: 0 30px 30px;
     float: none;
+    margin: none;
 }
 
 .intro-section {
@@ -148,7 +149,7 @@ a {
     width: 75px;
     height: 5px;
     border: 0;
-    background-color: #fafafa;
+    background-color: #384955;
 }
 
 .section-divider-long {
@@ -359,6 +360,11 @@ blockquote {
     font-weight: 400;
 }
 
+.list-items {
+    padding-left: 30px;
+    padding-bottom: 15px;
+}
+
 /*-----------------------------------------links to other websites on about page */
 
 .links {
@@ -414,11 +420,7 @@ blockquote {
     background-color: #384955;
 }
 
-.history-items {
-    padding-left: 30px;
-    padding-bottom: 15px;
 
-}
 
 /*-----------------------------------------qualifications */
 
@@ -480,7 +482,7 @@ blockquote {
 }
 
 @media (min-width: 768px) {
-    .history-items {
+    .list-items {
         border: 10px solid;
         border-bottom: none;
     }
