@@ -60,6 +60,11 @@ body {}
     margin: 0;
 }
 
+.text-justify {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
 main {
     margin: 0;
     padding: 0;
@@ -82,25 +87,6 @@ h4 {
 a {
     text-decoration: none;
     cursor: pointer;
-}
-
-.section-column {
-    display: table-cell;
-    padding: 0 30px 30px;
-    float: none;
-    margin: none;
-}
-
-.intro-section {
-    padding-top: 10px;
-    padding-bottom: 20px;
-}
-
-.section-details {
-    min-height: 25vh;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center!important;
 }
 
 /*-----------------------------------------buttons */
@@ -170,7 +156,7 @@ a {
     white-space: nowrap;
     background-position: center;
     background-repeat: no-repeat;
-     -o-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
@@ -224,8 +210,8 @@ a {
 .home-image {
     min-height: 95vh;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     position: relative;
     background: url(../images/home-image.jpg) no-repeat center center fixed;
     background-size: cover;
@@ -263,8 +249,8 @@ a {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     min-height: 30vh;
     text-align: center;
     padding: 5px 30px;
@@ -306,11 +292,11 @@ blockquote {
     font-family: "Advent Pro", sans-serif;
     text-align: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     color: #FAE2CB;
     padding: 0;
     margin: 0;
@@ -360,10 +346,26 @@ blockquote {
     font-weight: 400;
 }
 
-.list-items {
-    padding-left: 30px;
-    padding-bottom: 15px;
+.section-column {
+    display: table-cell;
+    padding: 0 30px 30px;
+    float: none;
 }
+
+.intro-section {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.section-details {
+    min-height: 25vh;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center!important;
+    margin-bottom: 15px;
+}
+
+
 
 /*-----------------------------------------links to other websites on about page */
 
@@ -380,6 +382,11 @@ blockquote {
 
 .timeline {
     margin: 0;
+}
+
+.history-items {
+    padding-left: 30px;
+    padding-bottom: 15px;
 }
 
 .timeline-item {
@@ -424,9 +431,13 @@ blockquote {
 
 /*-----------------------------------------qualifications */
 
-.qualif-section {
+.list-row {
     padding: 30px 0 30px;
     line-height: 200%;
+}
+
+.list-row i {
+    font-size: 40px;
 }
 
 /*-----------------------------------------Qigong page */
@@ -482,7 +493,7 @@ blockquote {
 }
 
 @media (min-width: 768px) {
-    .list-items {
+    .history-items {
         border: 10px solid;
         border-bottom: none;
     }
@@ -492,4 +503,4 @@ blockquote {
     .section-column {
         padding: 0 50px 0;
     }
-    
+}
