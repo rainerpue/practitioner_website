@@ -11,11 +11,13 @@ body {}
 .bg-grey {
     background-color: #384955;
     color: #FAE2CB;
+    padding-bottom: 20px;
 }
 
 .bg-coral {
     background-color: #FAE2CB;
     color: #384955;
+    padding-bottom: 20px;
 }
 
 /*-----------------------------------------Images */
@@ -239,10 +241,6 @@ a {
 
 /*-----------------------------------------testimonials in carrousel */
 
-.testimonials {
-    padding-bottom: 20px;
-}
-
 .slide {
     position: relative;
     display: -webkit-box;
@@ -269,7 +267,6 @@ blockquote {
 .intro {
     width: 100%;
     padding: 0;
-    padding-bottom: 20px;
     min-height: 20vh;
 }
 
