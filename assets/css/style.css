@@ -82,8 +82,8 @@ h3 {
 
 h4 {
     font-family: "Quicksand", sans-serif;
-    font-weight: 500;
-    font-size: 20px;
+    font-weight: 700;
+    font-size: 30px;
 }
 
 a {
@@ -462,6 +462,7 @@ blockquote {
 
 #video {
     min-height: 50vh;
+    padding-bottom: 15px;
 }
 
 .verse {
@@ -469,6 +470,11 @@ blockquote {
     font-weight: 400;
     font-size: 30px;
     padding-top: 30px;
+}
+
+.verse ul li {
+    list-style: none;
+    padding: 10px;
 }
 
 /*-----------------------------------------media queries */
@@ -527,5 +533,11 @@ blockquote {
 @media (min-width: 768px) {
     .section-column {
         padding: 0 50px 0;
+    }
+}
+
+@media (min-width: 768px) {
+    #video {
+        padding-bottom: 0;
     }
 }
