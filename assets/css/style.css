@@ -30,6 +30,10 @@ body {}
     background: url(../images/lotus.jpg);
 }
 
+.amatsu-img {
+    background: url(../images/amatsu.jpg);
+}
+
 .banner-image {
     min-height: 30vh;
     -webkit-background-size: 100% 100%;
@@ -474,7 +478,7 @@ blockquote {
 
 .verse ul li {
     list-style: none;
-    padding: 10px;
+    padding: 15px;
 }
 
 /*-----------------------------------------media queries */
