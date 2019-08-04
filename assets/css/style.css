@@ -501,31 +501,9 @@ blockquote {
 	align-items: center;
 	flex-direction: column;
 }
-/*-----------------------------------------Amatsu page 
-.first-stone-row {
-    position: relative;
-    left: 35%;
-    margin-bottom: -15px;
-}
+/*-----------------------------------------Amatsu page */
 
-.second-stone-row {
-    position: relative;
-    left: 25%;
-    margin-bottom: -15px;
-}
-
-.third-stone-row {
-    position: relative;
-    left: 15%;
-    margin-bottom: -15px;
-}
-
-.fourth-stone-row {
-    position: relative;
-    left: 5%;
-}
-*/
-
+/*-----------------------------------------stones custom css */
 .each-stone {
     width: 120px;
     height: 120px;
