@@ -55,8 +55,6 @@ body {}
 
 .container-fluid {
     margin: 0;
-    padding-left: 0;
-    padding-right: 0;
 }
 
 .text-uppercase {
@@ -498,8 +496,12 @@ blockquote {
     padding: 0;
     padding-bottom: 15px;
     margin-bottom: 10px;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
-
+/*-----------------------------------------Amatsu page 
 .first-stone-row {
     position: relative;
     left: 35%;
@@ -522,16 +524,19 @@ blockquote {
     position: relative;
     left: 5%;
 }
+*/
 
 .each-stone {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     border: 1px solid #384955;
     border-radius: 50%;
     background-color: #384955;
     color: #87B0CD;
-    vertical-align: middle;
-    display: table-cell
+    justify-content: center;
+	align-items: center;
+	display: flex;
+	margin-bottom: -15px;
 }
 
 .each-stone span {
@@ -605,7 +610,7 @@ blockquote {
     }
 }
 
-/*-----------------------------------------media query to place stones as a pyramid */
+/*-----------------------------------------media query to place stones as a pyramid 
 @media (min-width: 576px) {
     .first-stone-row {
         left: 36%;
@@ -651,3 +656,19 @@ blockquote {
         left: 2%;
     }
 }
+
+@media (min-width: 1080px) {
+    .first-stone-row {
+        left: 15%;
+    }
+    .second-stone-row {
+        left: 10%;
+    }
+    .third-stone-row {
+        left: 5%;
+    }
+    .fourth-stone-row {
+        left: 0%;
+    }
+}
+*/
