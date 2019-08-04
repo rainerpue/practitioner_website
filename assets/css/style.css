@@ -55,6 +55,8 @@ body {}
 
 .container-fluid {
     margin: 0;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .text-uppercase {
@@ -316,11 +318,11 @@ blockquote {
 .socialmedia i {
     width: 32px;
     height: 32px;
-    padding: 12px 0;
     border-radius: 50%;
     font-size: 35px;
-    line-height: 7px;
     text-align: center;
+    vertical-align: middle;
+    display: table-cell;
     color: #384955;
     background: #FAE2CB;
     transition: all 0.35s ease-in-out;
@@ -492,6 +494,52 @@ blockquote {
     padding: 10px;
 }
 
+.stone-section {
+    padding: 0;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+}
+
+.first-stone-row {
+    position: relative;
+    left: 35%;
+    margin-bottom: -15px;
+}
+
+.second-stone-row {
+    position: relative;
+    left: 25%;
+    margin-bottom: -15px;
+}
+
+.third-stone-row {
+    position: relative;
+    left: 15%;
+    margin-bottom: -15px;
+}
+
+.fourth-stone-row {
+    position: relative;
+    left: 5%;
+}
+
+.each-stone {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #384955;
+    border-radius: 50%;
+    background-color: #384955;
+    color: #87B0CD;
+    vertical-align: middle;
+    display: table-cell
+}
+
+.each-stone span {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+}
+
 /*-----------------------------------------media queries */
 
 /*-----------------------------------------media query to add navbar color background color on bigger screens */
@@ -554,5 +602,52 @@ blockquote {
 @media (min-width: 768px) {
     #video {
         padding-bottom: 0;
+    }
+}
+
+/*-----------------------------------------media query to place stones as a pyramid */
+@media (min-width: 576px) {
+    .first-stone-row {
+        left: 36%;
+    }
+    .second-stone-row {
+        left: 28%;
+    }
+    .third-stone-row {
+        left: 20%;
+    }
+    .fourth-stone-row {
+        left: 10%;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .first-stone-row {
+        left: 19%;
+    }
+    .second-stone-row {
+        left: 13%;
+    }
+    .third-stone-row {
+        left: 8%;
+    }
+    .fourth-stone-row {
+        left: 2%;
+    }
+}
+
+@media (min-width: 992px) {
+    .first-stone-row {
+        left: 18%;
+    }
+    .second-stone-row {
+        left: 13%;
+    }
+    .third-stone-row {
+        left: 8%;
+    }
+    .fourth-stone-row {
+        left: 2%;
     }
 }
