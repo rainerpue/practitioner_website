@@ -297,7 +297,6 @@ blockquote {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    color: #FAE2CB;
     padding: 0;
     margin: 0;
 }
@@ -523,6 +522,31 @@ blockquote {
     font-size: 18px;
 }
 
+/*-----------------------------------------treatment cards */
+
+.card {
+    background-color: #FAE2CB;
+    color: #384955;
+     margin-bottom: 15px;
+}
+
+.card-item {
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.card-item i {
+    font-size: 50px;
+}
+
+.card-item span {
+    font-family: "Caveat", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+}
+
 /*-----------------------------------------media queries */
 
 /*-----------------------------------------media query to add navbar color background color on bigger screens */
@@ -587,66 +611,3 @@ blockquote {
         padding-bottom: 0;
     }
 }
-
-/*-----------------------------------------media query to place stones as a pyramid 
-@media (min-width: 576px) {
-    .first-stone-row {
-        left: 36%;
-    }
-    .second-stone-row {
-        left: 28%;
-    }
-    .third-stone-row {
-        left: 20%;
-    }
-    .fourth-stone-row {
-        left: 10%;
-    }
-}
-
-
-@media (min-width: 768px) {
-    .first-stone-row {
-        left: 19%;
-    }
-    .second-stone-row {
-        left: 13%;
-    }
-    .third-stone-row {
-        left: 8%;
-    }
-    .fourth-stone-row {
-        left: 2%;
-    }
-}
-
-@media (min-width: 992px) {
-    .first-stone-row {
-        left: 18%;
-    }
-    .second-stone-row {
-        left: 13%;
-    }
-    .third-stone-row {
-        left: 8%;
-    }
-    .fourth-stone-row {
-        left: 2%;
-    }
-}
-
-@media (min-width: 1080px) {
-    .first-stone-row {
-        left: 15%;
-    }
-    .second-stone-row {
-        left: 10%;
-    }
-    .third-stone-row {
-        left: 5%;
-    }
-    .fourth-stone-row {
-        left: 0%;
-    }
-}
-*/
