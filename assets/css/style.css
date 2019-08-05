@@ -131,6 +131,15 @@ a {
     color: #87B0CD;
 }
 
+.btn--orange {
+    background-color: #FF8863;
+    color: #384955;
+}
+
+.btn--orange:hover {
+    color: #FAE2CB;
+}
+
 .btn--footer {
     color: #FAE2CB;
 }
@@ -377,7 +386,7 @@ blockquote {
     color: #FF8863;
 }
 
-/*-----------------------------------------timeline */
+/*-----------------------------------------timeline implemented from the Resume Mini-project in the User Centric module */
 
 .timeline {
     margin: 0;
@@ -491,18 +500,19 @@ blockquote {
     padding: 10px;
 }
 
+
+/*-----------------------------------------stones custom css */
+
 .stone-section {
     padding: 0;
     padding-bottom: 15px;
     margin-bottom: 10px;
-    display: flex;
-	justify-content: center;
+    display: flex;  /* this part of custom css was suggested by Eventyret Mentor in slack so the stones are centered on top of each other */
+	justify-content: center; 
 	align-items: center;
 	flex-direction: column;
 }
-/*-----------------------------------------Amatsu page */
 
-/*-----------------------------------------stones custom css */
 .each-stone {
     width: 120px;
     height: 120px;
@@ -510,7 +520,7 @@ blockquote {
     border-radius: 50%;
     background-color: #384955;
     color: #87B0CD;
-    justify-content: center;
+    justify-content: center; /* this part of custom css was suggested by Eventyret Mentor in slack */
 	align-items: center;
 	display: flex;
 	margin-bottom: -15px;
@@ -527,7 +537,6 @@ blockquote {
 .card-row {
     justify-content: space-around!important;
 }
-
 
 .card {
     background-color: #FAE2CB;
@@ -549,7 +558,7 @@ blockquote {
 .card-item span {
     font-family: "Caveat", sans-serif;
     font-weight: 400;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 
