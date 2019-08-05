@@ -459,6 +459,10 @@ blockquote {
     font-size: 40px;
 }
 
+.button {
+    margin-top: 30px;
+}
+
 /*-----------------------------------------Qigong page */
 
 .qigong-p {
