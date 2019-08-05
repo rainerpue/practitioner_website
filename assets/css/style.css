@@ -523,11 +523,16 @@ blockquote {
 }
 
 /*-----------------------------------------treatment cards */
+/*-- to justify space all around the cards and center */
+.card-row {
+    justify-content: space-around!important;
+}
+
 
 .card {
     background-color: #FAE2CB;
     color: #384955;
-     margin-bottom: 15px;
+    margin-bottom: 15px;
 }
 
 .card-item {
@@ -538,14 +543,16 @@ blockquote {
 }
 
 .card-item i {
-    font-size: 50px;
+    font-size: 60px;
 }
 
 .card-item span {
     font-family: "Caveat", sans-serif;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 25px;
 }
+
+
 
 /*-----------------------------------------media queries */
 
