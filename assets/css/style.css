@@ -89,10 +89,9 @@ main {
 
 h3 {
     padding: 15px 0 15px;
-    font-family: "Quicksand", sans-serif;
-    font-weight: 500;
-    font-size: 30px;
-    text-decoration: underline;
+    font-family: "Caveat", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
 }
 
 h4 {
@@ -172,6 +171,13 @@ a {
     margin: 0;
 }
 
+.section-divider-price {
+    width: 75px;
+    height: 5px;
+    border: 0;
+    background-color: #384955;
+}
+
 /*-----------------------------------------logo */
 
 .logo {
@@ -229,6 +235,56 @@ a {
 .nav-item a:hover {
     color: #FAE2CB!important;
     background-color: #384955;
+}
+
+/*-----------------------------------------footer */
+
+.footer-row {
+    padding: 0 15px;
+    text-align: center;
+}
+
+.footer-contact {
+    font-family: "Advent Pro", sans-serif;
+    text-align: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-contact p {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.footer-contact h5 {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.socialmedia i {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    font-size: 25px;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+    color: #384955;
+    background: #FAE2CB;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.social-links i:hover {
+    background: #e84610;
 }
 
 /*-----------------------------------------full background image with attention */
@@ -301,56 +357,7 @@ blockquote {
     margin-bottom: 20px;
 }
 
-/*-----------------------------------------footer */
 
-.footer-row {
-    padding: 0 15px;
-    text-align: center;
-}
-
-.footer-contact {
-    font-family: "Advent Pro", sans-serif;
-    text-align: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-}
-
-.footer-contact p {
-    font-weight: 400;
-    font-size: 20px;
-
-}
-
-.footer-contact h5 {
-    font-weight: 400;
-    font-size: 20px;
-}
-
-.socialmedia i {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    font-size: 35px;
-    text-align: center;
-    vertical-align: middle;
-    display: table-cell;
-    color: #384955;
-    background: #FAE2CB;
-    transition: all 0.35s ease-in-out;
-    -moz-transition: all 0.35s ease-in-out;
-    -webkit-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;
-}
-
-.social-links i:hover {
-    background: #e84610;
-}
 
 /*-----------------------------------------main content for each page */
 
@@ -482,6 +489,12 @@ blockquote {
     font-size: 30px;
 }
 
+.legend {
+    font-family: "Caveat", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
 .quote i {
     padding: 5px;
     font-weight: 700;
@@ -590,19 +603,6 @@ blockquote {
     margin-right: 5px;
 }
 
-.contact-heading {}
-
-.prices {
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
-    margin-bottom: 30px;
-}
-
-.price-table {
-    width: 100%
-}
-
 .form-control {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -621,7 +621,7 @@ blockquote {
         background-color: #FAE2CB;
     }
 }
-
+/*-----------------------------------------media query to place attention text in different location on bigger screens */
 @media (min-width: 768px) {
     .attention {
         padding-top: 400px;
@@ -636,21 +636,12 @@ blockquote {
     }
 }
 
+/*-----------------------------------------media query to hide short section divider on bigger screen */
 @media (min-width: 768px) {
     .section-divider-short {
-        width: 0px;
-        height: 0px;
-        border: 0;
+        display: none;
     }
-}
-
-@media (min-width: 768px) {
-    .footer-contact {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-    }
-}
+} 
 
 @media (min-width: 768px) {
     .footer-contact h5 p a {
