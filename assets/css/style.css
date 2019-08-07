@@ -76,7 +76,7 @@ https://stackoverflow.com/questions/38038056/adding-a-background-image-just-belo
     text-align: center;
     margin: 0;
 }
-
+/* found text-justify trick here: https://www.w3schools.com/cssref/css3_pr_text-justify.asp*/
 .text-justify {
     text-align: justify;
     text-justify: inter-word;
@@ -289,7 +289,7 @@ a {
 
 /*-----------------------------------------full background image with attention */
 
-.home-image {
+.home-image { /*found css trick here: https://css-tricks.com/perfect-full-page-background-image/ */
     min-height: 95vh;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -503,6 +503,10 @@ blockquote {
 #video {
     min-height: 50vh;
     padding-bottom: 15px;
+}
+
+iframe {
+    border: none;
 }
 
 .verse {

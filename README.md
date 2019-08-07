@@ -1,24 +1,120 @@
-YUAN GONG AND AMATSU WITH RAINER
+<h1 align="center">
+  <a href="https://github.com/mkuti/milestone_1/blob/master/assets/images/logo.jpg" target="_blank"><img src="assets/images/logo.jpg" alt="Rainer Puehringer Logo"/></a>
+</h1>
 
-https://mkuti.github.io/milestone_1/.
+<div align="center">
 
-One or two paragraphs providing an overview of your project.
+# YUAN GONG AND AMATSU WITH RAINER
+</div>
+<div align="center"> 
 
-Essentially, this part is your sales pitch.
+[Website is deployed via GitHub pages here](https://mkuti.github.io/milestone_1/)
+</div>
+ 
+A natural and minimalist website for an alternative medicine practitioner based in County Clare, Ireland. 
+This practitioner is a therapist and teacher in Qigong and Amatsu but is also a qualified chef and a home gardener all related by his passion about living better, happier and in a more natural way. He knows how important it is to keep the body, mind and soul in balance which makes him very passionate to share and teach with others.
+
+Because of the absence of knowledge and interest in these types of practices coupled with the very amateurish existing websites for those types of practices, the main goal of the website is to give a basic intro while not overloading with too much content, having a modern designed, minimalist and relaxed website for both already convinced or new clients and to guide everyone towards useful knowledge to apply or contact directly the practitioner for more.
 
 # UX
-Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
+__Primary target audience?__ green, nature, alternative, 30-45years old
+- *Strategy* > pastel colors, background image in relation to nature and peace and tranquillity
 
-In particular, as part of this section we recommend that you provide a list of 
+__What is the website for?__ 
+1. To answer questions about how to feel better, how to heal… 
+2. and to contact the practitioner and healer to get answers and help
+- *strategy* > information about practice and healing but also call to action (contact us)
 
-## User Stories, with the following general structure:
+__What is culturally appropriate?__ Traditional audience would not be too much into smart phone but goal is to attract young and modern audience who like fast info, color and modern design
+- *strategy* > maximise the responsive design in the website so we can make a beautiful and attractive website with modern design
+Not too much information and content, maybe more videos and photos
 
-* As a user type, I want to perform an action, so that I can achieve a goal.
+__Why is this so special?__ Because not many similar websites for alternative healing and all the existing websites are full of text and content, not very attractive
+————> strategy
 
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
+
+## User Stories:
+
+__For the Home page__
+1. As a user, when I land on a website, I am expecting a title with a logo or a photo, so I know where I am 
+	> logo with Rainer’s name and two practices which will be repeated on each page
+2. As a general website user, when I go to any website, I usually expect a navigation bar to be at the top of the page where a few menus are available to find out more
+	> * navbar with different menu items which stay fixed on top of the page when scrolling down the page and which will appear on each page
+	> * navbar should be a band of unified color with menu items on it
+3. As someone closed to nature, I expect a full image with green shades or flowers when I arrive on the website, so I know this is related to me
+	> a full screen picture for home page
+4. As a person looking to heal or live better, I expect to see a question related to me and my state, which can be a call for action to know more
+	> question overlaying on full screen image
+5. As a potential client, when I arrive on this website, I expect to see testimonials from other clients who already had therapy sessions or lessons with this practitioner
+	> band of one testimonial at a time with a carousel (white background #fafafa with black font) with a link to About Me to know more about practitioner
+6. As generally unaware of alternative therapies, when I land on this website, I expect to have a quick intro about what is the website about
+	> brief intro about Qigong and Amatsu with link to full pages (call to action) below the testimonials
+7. As someone interested by Qigong and want to find more, I want to find a quick link to get more information in the navbar
+	> a direct navlink in the navbar about Qigong to bring to another page
+8. As someone looking to receive Amatsu therapy session, I want to find a quick link to get more information and book a session in the navbar
+	> a direct navlink in the navbar about Amatsu to open another page 
+9. As a usual website user, I expect a contact call for action button so I can go further and reach out to the practitioner
+	> Contact Me button at the right side of the navbar and with a special color to attract attention
+10. As a usual website user, when I visit any website, I expect a footer with social media links to have more way to reach out to practitioner
+	> one small band of footer with social media links
+11. As an interested user and potential follower of those practices, when I finish exploring this website, I expect to have links which can easily found at the bottom of the page in the footer so can expand my knowledge by visiting other related websites
+	> 2 or 3 different links to other websites
+
+__About Me Page__
+1. As a potential client, when I visit a website about a practitioner:
+ * I want to know more about the person and the qualifications so I know if I can relate and rely on him and his skills. 
+    > About me page accessible from the navlink and the button on testimonial.
+
+ * I want to find out more about his life, his journey to the two practices he is passionate about.
+ 
+    > The page includes a timeline of Rainer’s life
+
+    > a brief intro about his background, his other skills and how it is all related by a common passion
+
+    > a resume of his qualifications
+
+__Qigong page__
+1. As someone interested by Qigong, I want to have more general information about the practice but also the specific teaching followed by this specific practitioner. 
+	> * Qigong accessible from the navlink
+	> * general introduction about Qigong practice
+	> * Yuan Gong and Ren Xue movement - follow up of general intro
+	> * a video of Qigong movement
+2. As someone looking to get healed or eager to improve his well-being, I do not know Qigong so a brief intro would be helpful on the Homepage. And when I come to the specific page of Qigong, expecting to have basic steps of Qigong to follow so I can start my journey
+	> * Button to find more about Qigong in the brief intro of the homepage
+	> * one easy exercise to follow and start Qigong journey
+	> * a video of Qigong movement
+
+__Amatsu page__
+1. As someone interested by Amatsu, when I come to this website, I expect to find more general information about the therapy and more importantly how to book a session with the practitioner
+ 	> * Amatsu directly accessible from the navbar as a menu item
+	> * simple timetable of practitioner (to be implemented at a later stage)
+	> * in the Amatsu page, I can “book a session” by filling a simple form
+2. As someone looking to get treated for a specific pain but I do not know what is Amatsu, a brief intro would be helpful on the Homepage. And when I come to the specific page of Amatsu, expecting to have more information about how the practitioner shows his skills and maybe to explain how a session happens + I can book a session directly on the page
+	> * Button to find more about Amatsu in the brief intro of the homepage
+	> * photo of practitioner giving Amatsu treatment next to brief explanation of a session timeline
+	> * in the Amatsu page, I can “book a session” by filling a simple form
+
+
+__List of wireframes made before building the website__ 
+
+I used Balsamic tool for the wireframes and attached them to the directory in assets. I spent a considerable amount of time doing wireframes in details as I had no clue of design before and wanted to have a clear idea of how the website looked like.
+
+- [Home](https://github.com/mkuti/milestone_1/blob/master/assets/Wireframes/Home%20Page.png)
+- [Home mobile](https://github.com/mkuti/milestone_1/blob/master/assets/Wireframes/Home%20Page%20Mobile.png)
+- [About Me](https://github.com/mkuti/milestone_1/blob/master/assets/Wireframes/About%20Me.png)
+- [About Me mobile](https://github.com/mkuti/milestone_1/blob/master/assets/Wireframes/About%20Me%20Mobile.png)
+- [Qigong](https://github.com/mkuti/milestone_1/blob/master/assets/Wireframes/Qigong.png)
+- [Qigong mobile](https://github.com/mkuti/milestone_1/blob/master/assets/Wireframes/Qigong%20Mobile.png)
+- [Amatsu](https://github.com/mkuti/milestone_1/blob/master/assets/Wireframes/Amatsu.png)
+
+As always when implementing coding, these wireframes templates do not exactly reflect the final version of the website itself but they were very useful for me to have an approximate design in my head and to also share with the client. 
+
+During mentoring session, I was for example advised to push down some content in a separate section to improve user experience because of overloaded content.
+
+The footer changed completely during coding phase while the navbar was greatly improved thanks to more option for color and fonts.
 
 # Features
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
+TO DO
 
 ## Existing Features
 * Feature 1 - allows users X to achieve Y, by having them fill out Z
@@ -32,52 +128,57 @@ In addition, you may also use this section to discuss plans for additional featu
 * Another feature idea
 
 # Technologies Used
-* This project uses HTML, CSS and JavaScript programming languages.
-* Cloud9
-* Google Fonts
-    * The project uses Google fonts to style the website fonts.
-* Bootstrap
-    * The project uses Bootstrap to simplify the structure of the website and make the website responsive easily.
-    * The project also uses Bootstrap to provide icons from FontAwesome
+TO COMPLETE
 
-In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
-JQuery
-The project uses JQuery to simplify DOM manipulation.
+Bootstrap
+Font awesome
+Google fonts
+Pexels for image
 
 # Media
-The photos used in this site were obtained from ...
+TO DESIGN WITH MARKDOWN
+
+The full background image and all banner images were all obtained from Pexels website, via the free download option, then compressed via Tiny.jpg and uploaded to assets/images.
+One photo of practitioner on AboutMe
+Other photos used in this site were obtained from https://www.huffpost.com/entry/10-reasons-to-get-to-know / http://www.mnbodynsoulacupuncture.com/health-benefits-tai-chi-qigong/ / https://www.amatsu.ca 
+The video on the Qigong website is from https://www.renxueinternational.org
 
 # Testing
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
+NEXT TO DO
 
-Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
-
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
-Contact form:
-Go to the "Contact Us" page
-Try to submit the empty form and verify that an error message about the required fields appears
-Try to submit the form with an invalid email address and verify that a relevant error message appears
-Try to submit the form with all inputs valid and verify that a success message appears.
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
-
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
-
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
 
 # Deployment
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
+TO DESIGN WITH MARKDOWN
 
-In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
+After you've created either a master or gh-pages branch, you can set one as your publishing source so that your site will be published.
+Enabling GitHub Pages to publish your site from master or gh-pages
+To select master or gh-pages as your publishing source, you must have the branch present in your repository. If you don't have a master or gh-pages branch, you can create them and then return to source settings to change your publishing source.
+On GitHub, navigate to your GitHub Pages site's repository. 
+Under your repository name, click  Settings 
+Use the Select source drop-down menu to select master or gh-pages as your GitHub Pages publishing source. 
+Click Save. 
+HOW TO RUN CODE LOCALLY
+On GitHub, navigate to the main page of the repository. Note: If the repository is empty, you can manually copy the repository page's URL from your browser and skip to step four. 
+Under the repository name, click Clone or download. 
+In the Clone with HTTPs section, click  to copy the clone URL for the repository 
+Open Terminal. 
+Change the current working directory to the location where you want the cloned directory to be made. 
+Type git clone, and then paste the URL you copied in Step 2. $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY 
+Press Enter. Your local clone will be created. 
 
-Different values for environment variables (Heroku Config Vars)?
-Different configuration files?
-Separate git branch?
-In addition, if it is not obvious, you should also describe how to run your code locally.
+# Credits 
+TO ADD AND DESIGN WITH MARKDOWN
 
-# Credits
+https://teamtreehouse.com/community/div-hidden-below-fixed-position-navbar-clearfix-issues-with-css
+Banner image code technics found in the link below:
+https://stackoverflow.com/questions/38038056/adding-a-background-image-just-below-the-navigation-bar
+
 
 # Content
-The text for section Y was copied from the Wikipedia article Z
+TO DO
 
 # Acknowledgements
-I received inspiration for this project from X
+TO COMPLETE
+
+I received inspiration for this project from Rainer Puehringer who is the practitioner showcased on the website 
+To Anaelle for designing the logo of the website
