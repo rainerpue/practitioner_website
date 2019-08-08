@@ -12,7 +12,7 @@
     <link rel="shortcut icon" type="image" href="assets/favicon/favicon-32x32.png">
     <!-- style links -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" type="text/css" />
+    <script src="https://kit.fontawesome.com/f7e192f540.js"></script>
 
     <!-- link to my css file comes after to make sure it render over bootstrap style -->
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
@@ -26,7 +26,7 @@
     <!-- blue background will only show on bigger screens, set to transparent for mobile device -->
     <nav class="navbar navbar-expand-md fixed-top navbar-light nav-coral">
         <!-- logo -->
-        <a href="index.html" class="navbar-brand logo">
+        <a href="index.html" class="navbar-brand" id="logo">
             <img src="assets/images/logo.jpg" width="150" height="100" alt="logo">
         </a>
         <!-- button for smaller devices -->
@@ -83,24 +83,16 @@
                     <img class="sm-img" src="assets/images/qigong.jpg" width="100%" height="auto" alt="Qigong movement">
                 </div>
                 <div class="col-12 col-md-4 main-content text-center">
-                    <p class="text-justify">REN XUE is a holistic approach to enhancing and uplifting life. Founded by Yuan Tze, REN XUE includes two distinct disciplines. Yuan Qigong, the first discipline, helps individuals find greater peace and harmony through a contemporary
-                        Qigong practice. Yuan Ming, the second, offers healing techniques that can diminish the effects of injury and illness.</p>
-                </div>
-            </div>
-
-            <div class="container-fluid">
-                <div class="row text-center">
-                    <div class="col-12">
-                        <a class="btn btn--gal btn--orange" href="contact.html">Book a session</a>
-                    </div>
+                    <p class="text-justify">REN XUE is a holistic approach to enhancing and uplifting life. Founded by Yuan Tze, it includes two distinct disciplines: Yuan Qigong, described on the left and Yuan Ming, the second, offers healing techniques that can diminish the effects of injury and illness.</p>
+                    <p class="text-justify">Find out more about REN XUE <span><a href="https://www.renxueinternational.org" class="links" target="_blank">here</a></span></p>
                 </div>
             </div>
         </section>
 
         <!-- Health benefits -->
 
-        <section class="container-fluid">
-            <div class="row bg-grey">
+        <section class="container-fluid bg-grey">
+            <div class="row ">
                 <div class="col-12 col-md-8">
                     <div class="row">
                         <div class="col-12">
@@ -111,7 +103,7 @@
                         <div class="col-12">
                             <div class="row list-row">
                                 <div class="col-2">
-                                    <i class="fa fa-running"></i>
+                                    <i class="fas fa-running"></i>
                                 </div>
                                 <div class="col-10">
                                     <h4>Increase Energy & Vitality</h4>
@@ -156,6 +148,15 @@
                     <p class="quote"><i class="fa fa-quote-left"></i>Just by cultivating these 5 qualities (of openness, trust, love, gratitude, and utmost humility towards the universe), I feel more balanced, joyful, and more alive in each experience.<i class="fa fa-quote-right"></i></p>
                 </div>
             </div>
+            
+            <div class="container-fluid">
+                <div class="row text-center">
+                    <div class="col-12">
+                        <a class="btn btn-gal btn-orange" href="contact.html">Book a session</a>
+                    </div>
+                </div>
+            </div>
+            
         </section>
 
         <!-- Yuan Qigong movement and video -->
@@ -194,28 +195,28 @@
 
     <footer>
         <div class="container-fluid bg-grey">
-            <div class="row footer-row">
-                <div class="col-12 col-md-4 footer-contact">
-                    <a class="btn btn--gal btn--grey text-uppercase" href="contact.html">Contact Me Here</a>
+            <div class="row footer-row text-center">
+                <div class="col-12 col-lg-4 footer-contact d-sm-flex">
+                    <a class="btn btn-gal btn-grey text-uppercase" href="contact.html">Contact Me Here</a>
                 </div>
-                <div class="col-12 col-md-2 footer-contact">
+                <div class="col-12 col-lg-2 footer-contact text-center d-sm-flex">
                     <h5 class="text-uppercase">or at the following:</h5>
                 </div>
-                <div class="col-12 col-md-2 footer-contact">
+                <div class="col-12 col-lg-2 footer-contact d-sm-flex">
                     <p>085-2896636</p>
                 </div>
-                <div class="col-12 col-md-2 footer-contact">
+                <div class="col-12 col-lg-2 footer-contact d-sm-flex">
                     <p>rainerpue@hotmail.com</p>
                 </div>
-                <div class="col-12 col-md-1 footer-contact">
+                <div class="col-12 col-lg-1 footer-contact d-sm-flex">
                     <a class="socialmedia" href="https://www.facebook.com/YuanGongandAmatsuwithRainer/" target="_blank">
-                    <i class="fa fa-facebook"></i>
+                    <i class="fab fa-facebook text-decoration-none"></i>
                     <span class="sr-only">Facebook</span>
                     </a>
                 </div>
-                <div class="col-12 col-md-1 footer-contact">
+                <div class="col-12 col-lg-1 footer-contact d-sm-flex">
                     <a class="socialmedia" href="https://www.linkedin.com/in/rainer-puehringer-63157248/" target="_blank">
-                    <i class="fa fa-linkedin"></i>
+                    <i class="fab fa-linkedin"></i>
                     <span class="sr-only">Linkedin</span>
                     </a>
                 </div>

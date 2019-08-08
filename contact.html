@@ -12,7 +12,7 @@
     <link rel="shortcut icon" type="image" href="assets/favicon/favicon-32x32.png">
     <!-- style links -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <script src="https://kit.fontawesome.com/f7e192f540.js"></script>
 
     <!-- link to my css file comes after to make sure it render over bootstrap style -->
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
@@ -26,7 +26,7 @@
     <!-- blue background will only show on bigger screens, set to transparent for mobile device -->
     <nav class="navbar navbar-expand-md fixed-top navbar-light nav-coral">
         <!-- logo -->
-        <a href="index.html" class="navbar-brand logo">
+        <a href="index.html" class="navbar-brand" id="logo">
             <img src="assets/images/logo.jpg" width="150" height="100" alt="logo">
         </a>
         <!-- button for smaller devices -->
@@ -49,7 +49,7 @@
                     <a class="nav-link" href="amatsu.html">Amatsu - Japanese Therapy</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">Contact</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
                 </li>
             </ul>
         </div>
@@ -112,10 +112,10 @@
                         </div>
                     </div>
                     <div class="row">
-                        <form class="col-12 contact-form">
+                        <form class="col-12 needs-validation contact-form">
                             <input type="text" name="name" id="fullname" class="form-control" placeholder="YOUR NAME" required/>
-                            <input type="number" name="phonenumber" id="phonenumber" class="form-control" placeholder="YOUR PHONE NUMBER" />
-                            <input type="email" name="email" id="emailaddress" class="form-control" placeholder="YOUR EMAIL" required/>
+                            <input type="number" name="phonenumber" id="phonenumber" class="form-control" placeholder="YOUR PHONE NUMBER"/>
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="YOUR EMAIL" required/>
                             <select class="custom-select custom-select-sm" name="how-can-i-help-you" id="how-can-i-help-you">
                                 <option selected>HOW CAN I HELP YOU</option>
                                 <option value="Book an Amatsu treatment">Book an Amatsu treatment</option>
@@ -140,28 +140,28 @@
 
     <footer>
         <div class="container-fluid bg-grey">
-            <div class="row footer-row">
-                <div class="col-12 col-md-4 footer-contact">
-                    <a class="btn btn--gal btn--grey text-uppercase" href="#">Contact Me Here</a>
+            <div class="row footer-row text-center">
+                <div class="col-12 col-lg-4 footer-contact d-sm-flex">
+                    <a class="btn btn-gal btn-grey text-uppercase" href="contact.html">Contact Me Here</a>
                 </div>
-                <div class="col-12 col-md-2 footer-contact">
+                <div class="col-12 col-lg-2 footer-contact text-center d-sm-flex">
                     <h5 class="text-uppercase">or at the following:</h5>
                 </div>
-                <div class="col-12 col-md-2 footer-contact">
+                <div class="col-12 col-lg-2 footer-contact d-sm-flex">
                     <p>085-2896636</p>
                 </div>
-                <div class="col-12 col-md-2 footer-contact">
+                <div class="col-12 col-lg-2 footer-contact d-sm-flex">
                     <p>rainerpue@hotmail.com</p>
                 </div>
-                <div class="col-12 col-md-1 footer-contact">
+                <div class="col-12 col-lg-1 footer-contact d-sm-flex">
                     <a class="socialmedia" href="https://www.facebook.com/YuanGongandAmatsuwithRainer/" target="_blank">
-                    <i class="fa fa-facebook"></i>
+                    <i class="fab fa-facebook text-decoration-none"></i>
                     <span class="sr-only">Facebook</span>
                     </a>
                 </div>
-                <div class="col-12 col-md-1 footer-contact">
+                <div class="col-12 col-lg-1 footer-contact d-sm-flex">
                     <a class="socialmedia" href="https://www.linkedin.com/in/rainer-puehringer-63157248/" target="_blank">
-                    <i class="fa fa-linkedin"></i>
+                    <i class="fab fa-linkedin"></i>
                     <span class="sr-only">Linkedin</span>
                     </a>
                 </div>

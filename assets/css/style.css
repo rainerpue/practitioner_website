@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Advent+Pro:100,200,300,400,500,600,700|Quicksand:300,400,500,700|Caveat:400,700');
 
-body {}
+html {
+scroll-behavior: smooth;
+}
 
-/*-----------------------------------------Colour */
+body {
+    font-family: "Advent Pro", sans-serif;  
+}
+
+/* Colour */
 
 .nav-coral {
     background-color: transparent;
@@ -11,7 +17,6 @@ body {}
 .bg-grey {
     background-color: #384955;
     color: #FAE2CB;
-    padding-bottom: 20px;
 }
 
 .bg-coral {
@@ -20,7 +25,7 @@ body {}
     padding-bottom: 20px;
 }
 
-/*-----------------------------------------Images */
+/* Images */
 
 .about-img {
     background: url(../images/about-image.jpg);
@@ -62,24 +67,10 @@ https://stackoverflow.com/questions/38038056/adding-a-background-image-just-belo
 }
 
 
-/*-----------------------------------------Special paddings/margins/texts */
+/* Special paddings/margins/texts */
 
 .container-fluid {
     margin: 0;
-}
-
-.text-uppercase {
-    text-transform: uppercase;
-}
-
-.text-center {
-    text-align: center;
-    margin: 0;
-}
-/* found text-justify trick here: https://www.w3schools.com/cssref/css3_pr_text-justify.asp*/
-.text-justify {
-    text-align: justify;
-    text-justify: inter-word;
 }
 
 main {
@@ -105,58 +96,56 @@ a {
     cursor: pointer;
 }
 
-/*-----------------------------------------buttons */
+/* buttons */
 
-.btn:hover {
-    color: #fafafa;
-    text-decoration: none;
-}
-
-.btn--gal {
+.btn-gal {
     margin-bottom: 0;
     margin-top: 0;
+    margin-left: 10px;
     border-radius: 15px;
     font-size: 20px;
     text-decoration: none;
     cursor: pointer;
 }
 
-.btn--grey {
+.btn-more {
+    font-size: 40px;
+}
+
+.btn-grey {
     background-color: #384955;
     border-color: #384955;
     color: #FAE2CB;
 }
 
-.btn--grey:hover {
+.btn-grey:hover {
     color: #FF8863;
 }
 
-.btn--coral {
+.btn-coral {
     background-color: #FAE2CB;
     border-color: #FAE2CB;
     color: #384955;
 }
 
-.btn--coral:hover {
+.btn-coral:hover {
     color: #87B0CD;
 }
 
-.btn--orange {
+.btn-orange {
     background-color: #FF8863;
     color: #384955;
+    font-size: 30px;
+    margin-bottom: 10px;
 }
 
-.btn--orange:hover {
+.btn-orange:hover {
     color: #FAE2CB;
 }
 
-.btn--footer {
-    color: #FAE2CB;
-}
+/* section divider */
 
-/*-----------------------------------------section divider */
-
-.section-divider-short {
+.section-divider-short, .section-divider-price {
     width: 75px;
     height: 5px;
     border: 0;
@@ -171,16 +160,9 @@ a {
     margin: 0;
 }
 
-.section-divider-price {
-    width: 75px;
-    height: 5px;
-    border: 0;
-    background-color: #384955;
-}
+/* logo */
 
-/*-----------------------------------------logo */
-
-.logo {
+#logo {
     display: inline-block;
     padding: 0;
     margin: 0;
@@ -194,19 +176,21 @@ a {
     -webkit-transition: all .5s ease-in-out;
 }
 
-/*-----------------------------------------burger icon inspired from https://mdbootstrap.com/docs/jquery/navigation/hamburger-menu/ */
+/* burger icon inspired from https://mdbootstrap.com/docs/jquery/navigation/hamburger-menu/ */
 
 .fa-bars {
-    font-size: 30px;
+    background-color: #FAE2CB;
+    color: #384955;
+    font-size: 40px;
     padding: 5px;
 }
 
 .navbar-light .navbar-toggler {
-    border-color: rgba(0, 0, 0, .3);
-    margin-right: 15px;
+    border: none;
+    margin-right: 5px;
 }
 
-/*-----------------------------------------nav */
+/* nav */
 
 .navbar {
     padding: 0;
@@ -235,18 +219,16 @@ a {
 .nav-item a:hover {
     color: #FAE2CB!important;
     background-color: #384955;
+    border-radius: 15px;
 }
 
-/*-----------------------------------------footer */
+/* footer */
 
 .footer-row {
     padding: 0 15px;
-    text-align: center;
 }
 
 .footer-contact {
-    font-family: "Advent Pro", sans-serif;
-    text-align: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -260,6 +242,7 @@ a {
 .footer-contact p {
     font-weight: 400;
     font-size: 20px;
+    margin-top: .5rem;
 }
 
 .footer-contact h5 {
@@ -268,26 +251,28 @@ a {
 }
 
 .socialmedia i {
-    width: 32px;
-    height: 32px;
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
-    font-size: 25px;
+    font-size: 35px;
     text-align: center;
     vertical-align: middle;
     display: table-cell;
-    color: #384955;
-    background: #FAE2CB;
+    color: #FAE2CB;
+    background: #384955;
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
     -o-transition: all 0.35s ease-in-out;
 }
 
-.social-links i:hover {
-    background: #e84610;
+/* trick to remove underline on font awesome icon when hover: https://codepen.io/jessicalyschik/pen/MJrwwx */
+.socialmedia i:before {
+	display: inline-block;
+	text-decoration: none;
 }
 
-/*-----------------------------------------full background image with attention */
+/* full background image with attention */
 
 .home-image { /*found css trick here: https://css-tricks.com/perfect-full-page-background-image/ */
     min-height: 95vh;
@@ -297,7 +282,7 @@ a {
     position: relative;
     background: url(../images/home-image.jpg) no-repeat center center fixed;
     background-size: cover;
-    padding-top: 100px;
+    padding-top: 100px; /*found css trick here: https://teamtreehouse.com/community/div-hidden-below-fixed-position-navbar-clearfix-issues-with-css */
 }
 
 .opaque-overlay {
@@ -312,14 +297,13 @@ a {
 .attention {
     width: 80%;
     color: #fafafa;
-    font-family: "Advent Pro", sans-serif;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 600;
     padding-left: 15px;
-    padding-top: 200px;
+    padding-top: 400px;
 }
 
-/*-----------------------------------------testimonials in carrousel */
+/* testimonials in carrousel */
 
 .slide {
     position: relative;
@@ -337,12 +321,11 @@ a {
 
 blockquote {
     width: 80px;
-    font-family: "Advent Pro", sans-serif;
     font-weight: 300;
     font-size: 30px;
 }
 
-/*-----------------------------------------home intro section */
+/* home intro section */
 
 .intro {
     width: 100%;
@@ -351,7 +334,6 @@ blockquote {
 }
 
 .content-intro {
-    font-family: "Advent Pro", sans-serif;
     font-size: 20px;
     font-weight: 400;
     margin-bottom: 20px;
@@ -359,7 +341,7 @@ blockquote {
 
 
 
-/*-----------------------------------------main content for each page */
+/* main content for each page */
 
 .main-content {
     position: relative;
@@ -367,7 +349,6 @@ blockquote {
     padding-bottom: 5px;
     padding-right: 30px;
     line-height: 200%;
-    font-family: "Advent Pro", sans-serif;
     font-size: 20px;
     font-weight: 400;
 }
@@ -393,10 +374,10 @@ blockquote {
 
 
 
-/*-----------------------------------------links to other websites on about page */
+/* links to other websites on about page */
 
 .links {
-    color: #FAE2CB;
+    color: inherit;
     font-weight: 700;
 }
 
@@ -404,7 +385,7 @@ blockquote {
     color: #FF8863;
 }
 
-/*-----------------------------------------timeline implemented from the Resume Mini-project in the User Centric module */
+/* timeline implemented from the Resume Mini-project in the User Centric module */
 
 .timeline {
     margin: 0;
@@ -420,7 +401,6 @@ blockquote {
     position: relative;
     color: #384955;
     border-left: 1px solid;
-    font-family: "Advent Pro", sans-serif;
 }
 
 .timeline-item p {
@@ -434,7 +414,6 @@ blockquote {
     left: 2.5em;
     top: 3em;
     display: block;
-    font-family: "Advent Pro", sans-serif;
     font-weight: 500;
     font-size: 0.8em;
     padding: 0;
@@ -455,7 +434,7 @@ blockquote {
 
 
 
-/*-----------------------------------------qualifications */
+/* qualifications */
 
 .list-row {
     padding: 30px 0 30px;
@@ -470,7 +449,7 @@ blockquote {
     margin-top: 30px;
 }
 
-/*-----------------------------------------Qigong page */
+/* Qigong page */
 
 .qigong-p {
     padding: 15px;
@@ -521,7 +500,7 @@ iframe {
     padding: 15px;
 }
 
-/*-----------------------------------------Amatsu page */
+/* Amatsu page */
 
 .fivefactors {
     font-weight: 600;
@@ -533,7 +512,7 @@ iframe {
 }
 
 
-/*-----------------------------------------stones custom css */
+/* stones custom css */
 
 .stone-section {
     padding: 0;
@@ -551,7 +530,7 @@ iframe {
     border: 1px solid #384955;
     border-radius: 50%;
     background-color: #384955;
-    color: #87B0CD;
+    color: #FAE2CB;
     justify-content: center; /* this part of custom css was suggested by Eventyret Mentor in slack */
 	align-items: center;
 	display: flex;
@@ -559,13 +538,12 @@ iframe {
 }
 
 .each-stone span {
-    font-family: "Quicksand", sans-serif;
     font-weight: 700;
     font-size: 18px;
 }
 
-/*-----------------------------------------treatment cards */
-/*-- to justify space all around the cards and center */
+/* treatment cards */
+/* to justify space all around the cards and center found trick by looking at another student website (Anna G.) */
 .card-row {
     justify-content: space-around!important;
 }
@@ -588,23 +566,21 @@ iframe {
 }
 
 .card-item span {
-    font-family: "Caveat", sans-serif;
     font-weight: 400;
     font-size: 20px;
 }
 
-/*-----------------------------------------contact page */
+/* contact page */
 
 .contact-section {
     min-height: 45vh;
     margin-bottom: 0;
+    margin-right: 20px;
 }
 
 .contact-form {
-    font-family: "Quicksand", sans-serif;
     background-color: #384955;
     color: #FAE2CB;
-    margin-right: 5px;
 }
 
 .form-control {
@@ -616,21 +592,13 @@ iframe {
     margin-bottom: 10px;
 }
 
-/*-----------------------------------------media queries */
+/* media queries */
 
 /*-----------------------------------------media query to add navbar color background color on bigger screens */
 
 @media (min-width: 768px) {
     .nav-coral {
         background-color: #FAE2CB;
-    }
-}
-/*-----------------------------------------media query to place attention text in different location on bigger screens */
-@media (min-width: 768px) {
-    .attention {
-        padding-top: 400px;
-        width: 60%;
-        font-size: 50px;
     }
 }
 
@@ -640,7 +608,7 @@ iframe {
     }
 }
 
-/*-----------------------------------------media query to hide short section divider on bigger screen */
+/* media query to hide short section divider on bigger screen */
 @media (min-width: 768px) {
     .section-divider-short {
         display: none;
@@ -648,7 +616,7 @@ iframe {
 } 
 
 @media (min-width: 768px) {
-    .footer-contact h5 p a {
+    .footer-contact h5, p, a {
         padding-left: 15px;
     }
 }
@@ -656,7 +624,6 @@ iframe {
 @media (min-width: 768px) {
     .history-items {
         border: 10px solid;
-        border-bottom: none;
     }
 }
 

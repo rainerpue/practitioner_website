@@ -12,7 +12,7 @@
     <link rel="shortcut icon" type="image" href="assets/favicon/favicon-32x32.png">
     <!-- style links -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <script src="https://kit.fontawesome.com/f7e192f540.js"></script>
 
     <!-- link to my css file comes after to make sure it render over bootstrap style -->
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
@@ -26,7 +26,7 @@
     <!-- blue background will only show on bigger screens, set to transparent for mobile device -->
     <nav class="navbar navbar-expand-md fixed-top navbar-light nav-coral">
         <!-- logo -->
-        <a href="index.html" class="navbar-brand logo">
+        <a href="index.html" class="navbar-brand" id="logo">
             <img src="assets/images/logo.jpg" width="150" height="100" alt="logo">
         </a>
         <!-- button for smaller devices -->
@@ -70,16 +70,16 @@
             </div>
         </div>
         <div class="container-fluid">
-            <div class="row text-center">
+            <div class="row">
                 <div class="col-12">
-                    <a class="btn btn--gal btn--grey" href="#intro">Learn more...</a>
+                    <a class="btn btn-gal btn-grey btn-more text-decoration-none" href="#intro">Learn more...</a>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- testimonials in a carrousel -->
-    <section class="container-fluid bg-grey">
+    <section class="container-fluid bg-grey pb-2">
         <div class="row">
             <div class="col text-center">
                 <h3 class="text-uppercase">How did my customers feel...</h3>
@@ -101,13 +101,6 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid">
-            <div class="row text-center">
-                <div class="col-12">
-                    <a class="btn btn--gal btn--coral" href="about.html">More about Rainer</a>
-                </div>
-            </div>
-        </div>
     </section>
 
     <!-- brief introduction section -->
@@ -122,7 +115,7 @@
 
                 <div class="row">
                     <div class="col-12">
-                        <a class="btn btn--gal btn--grey" href="qigong.html">More about Yuan Qigong</a>
+                        <a class="btn btn-gal btn-grey" href="qigong.html">More about Yuan Qigong</a>
                     </div>
                 </div>
             </div>
@@ -134,9 +127,10 @@
                 <h4 class="color-intro">A gentle Japanese therapy</h4>
                 <p class="content-intro text-justify">Unlike many other therapies, Amatsu is a whole body treatment that works with the body's soft tissue (eg muscles, tendons, fascia, ligaments and organs) to help to re-balance other key mechanical and energetic structures (eg the spine,bones,
                     joints, cranium and meridian circuits).</p>
+                    
                 <div class="row">
                     <div class="col-12">
-                        <a class="btn btn--gal btn--grey" href="amatsu.html">More about Amatsu</a>
+                        <a class="btn btn-gal btn-grey" href="amatsu.html">More about Amatsu</a>
                     </div>
                 </div>
             </div>
@@ -147,28 +141,28 @@
 
     <footer>
         <div class="container-fluid bg-grey">
-            <div class="row footer-row">
-                <div class="col-12 col-md-4 footer-contact d-sm-flex">
-                    <a class="btn btn--gal btn--grey text-uppercase" href="contact.html">Contact Me Here</a>
+            <div class="row footer-row text-center">
+                <div class="col-12 col-lg-4 footer-contact d-sm-flex">
+                    <a class="btn btn-gal btn-grey text-uppercase" href="contact.html">Contact Me Here</a>
                 </div>
-                <div class="col-12 col-md-2 footer-contact d-sm-flex">
+                <div class="col-12 col-lg-2 footer-contact text-center d-sm-flex">
                     <h5 class="text-uppercase">or at the following:</h5>
                 </div>
-                <div class="col-12 col-md-2 footer-contact d-sm-flex">
+                <div class="col-12 col-lg-2 footer-contact d-sm-flex">
                     <p>085-2896636</p>
                 </div>
-                <div class="col-12 col-md-2 footer-contact d-sm-flex">
+                <div class="col-12 col-lg-2 footer-contact d-sm-flex">
                     <p>rainerpue@hotmail.com</p>
                 </div>
-                <div class="col-12 col-md-1 footer-contact d-sm-flex">
+                <div class="col-12 col-lg-1 footer-contact d-sm-flex">
                     <a class="socialmedia" href="https://www.facebook.com/YuanGongandAmatsuwithRainer/" target="_blank">
-                    <i class="fa fa-facebook"></i>
+                    <i class="fab fa-facebook text-decoration-none"></i>
                     <span class="sr-only">Facebook</span>
                     </a>
                 </div>
-                <div class="col-12 col-md-1 footer-contact d-sm-flex">
+                <div class="col-12 col-lg-1 footer-contact d-sm-flex">
                     <a class="socialmedia" href="https://www.linkedin.com/in/rainer-puehringer-63157248/" target="_blank">
-                    <i class="fa fa-linkedin"></i>
+                    <i class="fab fa-linkedin"></i>
                     <span class="sr-only">Linkedin</span>
                     </a>
                 </div>
@@ -176,9 +170,9 @@
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>
