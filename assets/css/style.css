@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Advent+Pro:100,200,300,400,500,600,700|Quicksand:300,400,500,700|Caveat:400,700');
 
 html {
-scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-    font-family: "Advent Pro", sans-serif;  
+    font-family: "Advent Pro", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
 }
 
 /* Colour */
@@ -62,8 +64,6 @@ https://stackoverflow.com/questions/38038056/adding-a-background-image-just-belo
 }
 
 .sm-img {
-    min-height: 265px;
-    min-width: 180px;
     max-height: 600px;
     max-width: 400px;
 }
@@ -83,7 +83,6 @@ main {
 h3 {
     padding: 15px 0 15px;
     font-family: "Caveat", sans-serif;
-    font-weight: 400;
     font-size: 40px;
 }
 
@@ -105,7 +104,6 @@ a {
     margin-top: 0;
     margin-left: 10px;
     border-radius: 15px;
-    font-size: 20px;
     text-decoration: none;
     cursor: pointer;
 }
@@ -147,7 +145,8 @@ a {
 
 /* section divider */
 
-.section-divider-short, .section-divider-price {
+.section-divider-short,
+.section-divider-price {
     width: 75px;
     height: 5px;
     border: 0;
@@ -242,14 +241,7 @@ a {
 }
 
 .footer-contact p {
-    font-weight: 400;
-    font-size: 20px;
     margin-top: .5rem;
-}
-
-.footer-contact h5 {
-    font-weight: 400;
-    font-size: 20px;
 }
 
 .socialmedia i {
@@ -269,22 +261,26 @@ a {
 }
 
 /* trick to remove underline on font awesome icon when hover: https://codepen.io/jessicalyschik/pen/MJrwwx */
+
 .socialmedia i:before {
-	display: inline-block;
-	text-decoration: none;
+    display: inline-block;
+    text-decoration: none;
 }
 
 /* full background image with attention */
 
-.home-image { /*found css trick here: https://css-tricks.com/perfect-full-page-background-image/ */
-    min-height: 95vh;
+.home-image {
+    /*found css trick here: https://css-tricks.com/perfect-full-page-background-image/ */
+    min-height: 40vh;
+    max-height: 95vh;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
     position: relative;
     background: url(../images/home-image.jpg) no-repeat center center fixed;
     background-size: cover;
-    padding-top: 100px; /*found css trick here: https://teamtreehouse.com/community/div-hidden-below-fixed-position-navbar-clearfix-issues-with-css */
+    padding-top: 100px;
+    /*found css trick here: https://teamtreehouse.com/community/div-hidden-below-fixed-position-navbar-clearfix-issues-with-css */
 }
 
 .opaque-overlay {
@@ -297,12 +293,11 @@ a {
 }
 
 .attention {
-    width: 80%;
     color: #fafafa;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 600;
     padding-left: 15px;
-    padding-top: 400px;
+    padding-top: 300px;
 }
 
 /* testimonials in carrousel */
@@ -336,8 +331,6 @@ blockquote {
 }
 
 .content-intro {
-    font-size: 20px;
-    font-weight: 400;
     margin-bottom: 20px;
 }
 
@@ -351,8 +344,6 @@ blockquote {
     padding-bottom: 5px;
     padding-right: 30px;
     line-height: 200%;
-    font-size: 20px;
-    font-weight: 400;
 }
 
 .section-column {
@@ -443,10 +434,6 @@ blockquote {
     line-height: 200%;
 }
 
-.list-row i {
-    font-size: 40px;
-}
-
 .button {
     margin-top: 30px;
 }
@@ -472,8 +459,6 @@ blockquote {
 
 .legend {
     font-family: "Caveat", sans-serif;
-    font-weight: 400;
-    font-size: 20px;
 }
 
 .quote i {
@@ -492,7 +477,6 @@ iframe {
 
 .verse {
     font-family: "Caveat", sans-serif;
-    font-weight: 400;
     font-size: 30px;
     padding-top: 30px;
 }
@@ -520,10 +504,12 @@ iframe {
     padding: 0;
     padding-bottom: 15px;
     margin-bottom: 10px;
-    display: flex;  /* this part of custom css was suggested by Eventyret Mentor in slack so the stones are centered on top of each other */
-	justify-content: center; 
-	align-items: center;
-	flex-direction: column;
+    margin-left: 5px;
+    display: flex;
+    /* this part of custom css was suggested by Eventyret Mentor in slack so the stones are centered on top of each other: https://codepen.io/Eventyret/pen/PMJrNq */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .each-stone {
@@ -533,19 +519,24 @@ iframe {
     border-radius: 50%;
     background-color: #384955;
     color: #FAE2CB;
-    justify-content: center; /* this part of custom css was suggested by Eventyret Mentor in slack */
-	align-items: center;
-	display: flex;
-	margin-bottom: -15px;
+    justify-content: center;
+    /* this part of custom css was suggested by Eventyret Mentor in slack */
+    align-items: center;
+    display: flex;
+    margin-bottom: -15px;
+    margin-left: -5px;
+    margin-right: -5px;
 }
 
-.each-stone span {
+.each-stone p {
     font-weight: 700;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 /* treatment cards */
+
 /* to justify space all around the cards and center found trick by looking at another student website (Anna G.) */
+
 .card-row {
     justify-content: space-around!important;
 }
@@ -565,11 +556,6 @@ iframe {
 
 .card-item i {
     font-size: 60px;
-}
-
-.card-item span {
-    font-weight: 400;
-    font-size: 20px;
 }
 
 /* contact page */
@@ -605,20 +591,36 @@ iframe {
 }
 
 @media (min-width: 768px) {
+    .home-image {
+        min-height: 95vh;
+    }
+}
+
+@media (min-width: 768px) {
+    .attention {
+        width: 60%;
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 768px) {
     .slide {
         min-height: 20vh;
     }
 }
 
 /* media query to hide short section divider on bigger screen */
+
 @media (min-width: 768px) {
     .section-divider-short {
         display: none;
     }
-} 
+}
 
 @media (min-width: 768px) {
-    .footer-contact h5, p, a {
+    .footer-contact h5,
+    p,
+    a {
         padding-left: 15px;
     }
 }
