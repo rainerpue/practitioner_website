@@ -62,6 +62,8 @@ https://stackoverflow.com/questions/38038056/adding-a-background-image-just-belo
 }
 
 .sm-img {
+    min-height: 265px;
+    min-width: 180px;
     max-height: 600px;
     max-width: 400px;
 }
