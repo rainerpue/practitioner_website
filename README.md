@@ -114,7 +114,7 @@ During mentoring session, I was for example advised to push down some content in
 The footer changed completely during coding phase while the navbar was greatly improved thanks to more option for color and fonts.
 
 # Features
-TO DO
+
 
 ## Existing Features
 * Feature 1 - allows users X to achieve Y, by having them fill out Z
@@ -125,6 +125,8 @@ For some/all of your features, you may choose to reference the specific project 
 In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
 
 * Features Left to Implement
+ * A calendar with availability from the practitioner where clients can book themselves in
+ * 
 * Another feature idea
 
 # Technologies Used
@@ -144,7 +146,56 @@ Other photos used in this site were obtained from https://www.huffpost.com/entry
 The video on the Qigong website is from https://www.renxueinternational.org
 
 # Testing
-NEXT TO DO
+***
+
+* __Final and official testing__: 
+  * [W3 MarkUp validation](https://validator.w3.org)
+  * [W3 CSS validation](https://jigsaw.w3.org/css-validator/)
+
+I checked the validity of my code at different times and received few errors on HTML markup which I worked on correcting. I did not get any errors with my CSS.
+Example of an error in the MarkUp corrected: 
+- *The frameborder attribute on the iframe element is obsolete. Use CSS instead.* I then removed frameborder from HTML and added border: none in CSS
+
+
+
+Since I started to build the structure of the website and add the first line of code or content, I have done constant testing via the use of Chrome Developer tools.
+Starting from the mobile-first side of things each element on each page was tested to ensure it functions as expected. Using the device selector through the
+dev tools, each device was selected to achieve the testing needed. If and when I encountered an error, I would first try to alleviate that error through the 
+accompanying elements panel, and if successful replicate the fix in my IDE. If an error could not be fixed, my focus would turn to Slack and my fellow Code Institute
+students for help with identifying the problem and advice for tackling same.
+
+At the moment the website has been tested on Internet Explorer, Google Chrome, Microsoft Edge, Opera & Mozilla Firefox. The website works and functions as expected on Google Chrome, Microsoft Edge, Opera and
+Mozilla Firefox, however it has major functional flaw in the "Carousel" implemented on the "About" page on Internet Explorer. This is a known issue amongst the community
+of Bootstrap users and apparently has no webkit fix that I have been able to find and implement. 
+The flaw stretches the center image and distorts it to the edge of the carousel container and ultimately creating awful User Experience for those on Internet Explorer. 
+As a considerable amount of time was dedicated to trying to fix it, and with no clear fix in sight, I decided to leave it for now and detail it in the README as the 
+only current error I have come across on the project. 
+
+
+During my Mid-Project Review with my Mentor, it was suggested that my Media Queries be restructured as I had utilised ```Max-widths``` in my CSS, as this did not quite fit the brief
+of mobile-first response. To combat this, I started by re-arranging my code to utilise the media queries from smallest to largest, removing any ```Max-widths``` specified in the stylesheet. Doing this greatly helped my understanding of the term
+mobile-first and in doing so my code looks and functions in the correct flow and manner.
+* Link to repo commit before restructure: <a href="https://github.com/auxfuse/Milestone1/tree/0a60fb53370c91c0688bd9a00bf0a867fc42f00c/css">CSS</a>
+* Link to repo commit after restructure: <a href="https://github.com/auxfuse/Milestone1/blob/244c5666c8f8ff33c0b3f21b88ee23c2b2312046/css/style.css">CSS file after Restructure</a>
+
+Other additional feedback from my mentor was to:
+* remove the list-item icon that I originally had appearing after the Coaches Expertise list-items, accompanying the list-item icon used before each line, as this did not quite fit the overall aesthetic and generally provided a cluttered Design experience. <i>~ icon since removed, leaving only the custom list style bullet before each line</i>.
+
+* lighten the call-to-action dark text to provide a more striking & eye-catching response as was the original intention for this CTA, to boost metrics for the Free introductory classes. <i>~ colour shade changed to ```#7f7f7f``` same as
+unhovered/inactive state colours of the Navbar headings/social media icons etc</i>.
+
+Regular use of the #peer-code-review channel in Slack was incredibly beneficial to me as a developer allowing others to test the website and critique same.
+This would highlight problem areas, non-functioning elements and overall critique enabling me to work and strive towards a better end product. 
+
+Also, use of the <a href="https://validator.w3.org/">W3C Validator</a> assisted in ensuring my code was up to professional grade standards and structured correctly. It highlighted several inconsistencies,
+such as:
+* ```padding: auto``` appearing in my CSS <i>~ since removed</i>.
+* My modal having a mismatching ```ariadescribedby``` label <i>~ since rectified</i>.
+* And a quirky error caused by the character set emoji "<3" to simulate a heart on one of the testimonials as detailed by the user. <i>~ no fix necessary as this is the language used by the user to describe a "heart" emoji</i>.
+
+
+The final testing phase was for the customer to see the almost finished product. The website was demoed to them and was received positively by the Customer and their respective
+colleagues and employees. 
 
 
 # Deployment

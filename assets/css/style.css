@@ -177,6 +177,15 @@ a {
     -webkit-transition: all .5s ease-in-out;
 }
 
+.navbar-brand {
+    opacity: 1;
+}
+
+.navbar-brand>img {
+    height: 50px;
+    width: 80px;
+}
+
 /* burger icon inspired from https://mdbootstrap.com/docs/jquery/navigation/hamburger-menu/ */
 
 .fa-bars {
@@ -184,6 +193,7 @@ a {
     color: #384955;
     font-size: 40px;
     padding: 5px;
+    border-radius: 5px;
 }
 
 .navbar-light .navbar-toggler {
@@ -587,6 +597,13 @@ iframe {
 @media (min-width: 768px) {
     .nav-coral {
         background-color: #FAE2CB;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar-brand>img {
+        height: 100px;
+        width: 150px;
     }
 }
 
