@@ -50,9 +50,6 @@ https://stackoverflow.com/questions/38038056/adding-a-background-image-just-belo
 
 .banner-image {
     min-height: 30vh;
-    -webkit-background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    -o-background-size: 100% 100%;
     background-size: 100% 100%;
     width: 100vw;
     background-repeat: no-repeat;
@@ -141,10 +138,6 @@ a {
 
 .btn-orange:hover {
     color: #FAE2CB;
-}
-
-.btn-amatsu {
-    margin-bottom: 8px;!important
 }
 
 /* section divider */
@@ -521,11 +514,20 @@ iframe {
     padding-bottom: 15px;
     margin-bottom: 10px;
     margin-left: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     /* this part of custom css was suggested by Simen Dehlin in slack so the stones are centered on top of each other: https://codepen.io/Eventyret/pen/PMJrNq */
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .each-stone {
@@ -535,9 +537,15 @@ iframe {
     border-radius: 50%;
     background-color: #384955;
     color: #FAE2CB;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     /* this part of custom css was suggested by Eventyret Mentor in slack */
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-bottom: -15px;
     margin-left: -5px;
@@ -554,7 +562,8 @@ iframe {
 /* to justify space all around the cards and center found trick by looking at another student website (Anna G.) */
 
 .card-row {
-    justify-content: space-around!important;
+    -ms-flex-pack: distribute!important;
+        justify-content: space-around!important;
 }
 
 .card {
@@ -635,16 +644,33 @@ iframe {
 }
 
 @media (min-width: 768px) {
-    .footer-contact h5,
-    p,
-    a {
-        padding-left: 15px;
+    .history-items {
+        border: 10px solid;
     }
 }
 
 @media (min-width: 768px) {
-    .history-items {
-        border: 10px solid;
+    a {
+        padding-left: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .section-column {
+        padding: 0 50px 0;
+    }
+}
+
+@media (min-width: 768px) {
+    #video {
+        padding-bottom: 0;
+    }
+}
+
+
+@media (min-width: 768px) {
+    a {
+        padding-left: 0;
     }
 }
 
