@@ -167,7 +167,7 @@ During mentoring session, I was for example advised to push down some content in
 The footer changed completely during coding phase while the navbar was greatly improved thanks to more option for color and fonts.
 
 # Technologies Used
-- This website used HTML and CSS programming languages.
+- This website used HTML and CSS programming languages. 
 - One feature also needed JS language which was provided by Simen Dehlin (mentor) via Slack
 - [AWS Cloud9](https://www.awseducate.com/student/s/awssite) - I used __AWS Cloud9__ as my IDE for the development of this website.
 - [BootstrapCDN](https://www.bootstrapcdn.com/) - The website is using __Bootstrap4__ as the basic structure and grid of the website and to increase the responsiveness of the website.
@@ -183,7 +183,7 @@ The footer changed completely during coding phase while the navbar was greatly i
 
 # Testing
 
-* __Final and official testing__: 
+### Final and official testing:
   * [W3 MarkUp validation](https://validator.w3.org)
   * [W3 CSS validation](https://jigsaw.w3.org/css-validator/)
 
@@ -191,13 +191,24 @@ I checked the validity of my code at different times and received few errors on 
 Example of an error in the MarkUp corrected: 
 - *The frameborder attribute on the iframe element is obsolete. Use CSS instead.* I then removed frameborder from HTML and added border: none in CSS
 
+### General testing
+Since I started to build the structure of the website and added the first line of code or content, I did constant testing via the use of Chrome Developer tools.
+For each feature I was working on, I tried to preview it in Chrome Dev tools to understand quickly which HTML or CSS would cause a certain effect and correct it as soon as possible. 
+This allowed me to fully comprehend the languages and push to GitHub only after I made the whole feature was working well.
+
+Each element of each page was tested to ensure its features worked as expected and was specifically responsive on mobile and small devices. For this, I used the device selector through the
+dev tools and selected each device to test each element. I also made sure to increase and decrease screen size of the browser directly to see the breakpoints and correct if needed. 
+Whenever an error was noticed, I used the dev tools to apply or change certain styles and if successful, copied it to my IDE.
+
+Generally, I quickly noticed that the tablet devices with a medium size was requiring more attention as the responsiveness was working poorly. So when I could I added more Bootstrap grid columns to fix the responsiveness.
+This has been then one of my preoccupation for the whole testing.
+
+As a general rule also, when something would not work, especially at the beginning when I tried to build it with only HTML and CSS, without BootStrap, as challenged by my mentor then, I would do the search in W3Schools, Stack Overflow and Google generally to see if other developers struggled with same issue and found solution.
+Then when I could not find a solution anywhere else, I would turn to Slack and ask questions to fellow students. However, because I worked evenings mostly and did not have much opportunity to discuss my project with my mentor, I had to find solutions myself by playing around.
+
+### Testing in different browsers
 
 
-Since I started to build the structure of the website and add the first line of code or content, I have done constant testing via the use of Chrome Developer tools.
-Starting from the mobile-first side of things each element on each page was tested to ensure it functions as expected. Using the device selector through the
-dev tools, each device was selected to achieve the testing needed. If and when I encountered an error, I would first try to alleviate that error through the 
-accompanying elements panel, and if successful replicate the fix in my IDE. If an error could not be fixed, my focus would turn to Slack and my fellow Code Institute
-students for help with identifying the problem and advice for tackling same.
 
 
 
@@ -260,3 +271,6 @@ https://stackoverflow.com/questions/38038056/adding-a-background-image-just-belo
 - To [Anthony O'Brien](https://github.com/auxfuse), current lead for usercentric slack channel, who provided such a useful resource for research and tools. This will follow me through all milestones!
 
 __Thank you all!__
+
+##### Disclaimer:
+The content of the website is for educational purposes only.
