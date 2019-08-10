@@ -16,6 +16,13 @@ This practitioner is a therapist and teacher in Qigong and Amatsu but is also a 
 
 Because of the absence of knowledge and interest in these types of practices coupled with the very amateurish existing websites for those types of practices, the main goal of the website is to give a basic intro while not overloading with too much content, having a modern designed, minimalist and relaxed website for both already convinced or new clients and to guide everyone towards useful knowledge to apply or contact directly the practitioner for more.
 
+During strategy plane of UX and while consulting the practitioner, I have come up with the main business needs for this website, as listed below:
+- BUILD ONLINE PRESENCE
+- INCREASE AWARENESS ABOUT BOTH PRACTICES
+- INCREASE POTENTIAL CLIENTS
+
+Other needs came up during discussion with client but could not be implemented during this project as lack of time, readiness and programming languages for now. 
+
 # UX
 __Primary target audience?__ green, nature, alternative, 30-45years old
 - *Strategy* > pastel colors, background image in relation to nature and peace and tranquillity
@@ -90,31 +97,58 @@ __About Me Page__
 
     > a brief intro about his background, his other skills and how it is all related by a common passion
 
-    > a resume of his qualifications
+    > a list of his qualifications
 
 __Qigong page__
-1. As someone interested by Qigong, I want to have more general information about the practice but also the specific teaching followed by this specific practitioner. 
-	> * Qigong accessible from the navlink
-	> * general introduction about Qigong practice
-	> * Yuan Gong and Ren Xue movement - follow up of general intro
-	> * a video of Qigong movement
-2. As someone looking to get healed or eager to improve his well-being, I do not know Qigong so a brief intro would be helpful on the Homepage. And when I come to the specific page of Qigong, expecting to have basic steps of Qigong to follow so I can start my journey
+1. As someone interested by Qigong, I want to have more general information about the practice but also the specific teaching followed by this specific practitioner:
+	> * Qigong directly accessible from the navbar as a menu item
+	> * general introduction about Qigong practice on home page
+	> * Yuan Gong and Ren Xue movement - follow up of general intro and link to Ren Xue website to know more
+	> * list of general well-being benefits of the practice
+2. As someone looking to get healed or eager to improve his well-being, I do not know Qigong so a brief intro would be helpful on the Homepage:
 	> * Button to find more about Qigong in the brief intro of the homepage
-	> * one easy exercise to follow and start Qigong journey
-	> * a video of Qigong movement
+3. When I come to the specific page of Qigong, expecting to have basic steps of Qigong to follow so I can start my journey:
+	> * one easy verse to follow and start Qigong journey
+	> * a __video__ of Qigong movement
+	> * link to book a lesson with practitioner > re-direct to "Contact page" (__CALL FOR ACTION__)
 
 __Amatsu page__
 1. As someone interested by Amatsu, when I come to this website, I expect to find more general information about the therapy and more importantly how to book a session with the practitioner
  	> * Amatsu directly accessible from the navbar as a menu item
-	> * simple timetable of practitioner (to be implemented at a later stage)
-	> * in the Amatsu page, I can “book a session” by filling a simple form
-2. As someone looking to get treated for a specific pain but I do not know what is Amatsu, a brief intro would be helpful on the Homepage. And when I come to the specific page of Amatsu, expecting to have more information about how the practitioner shows his skills and maybe to explain how a session happens + I can book a session directly on the page
+	> * in the Amatsu page, I can click on “book a treatment” which takes me to "Contact page" (__CALL FOR ACTION__)
+2. As someone looking to get treated for a specific pain but I do not know what is Amatsu, a brief intro would be helpful on the Homepage. 
+	> * general introduction about Amatsu practice on home page
 	> * Button to find more about Amatsu in the brief intro of the homepage
-	> * photo of practitioner giving Amatsu treatment next to brief explanation of a session timeline
-	> * in the Amatsu page, I can “book a session” by filling a simple form
+3. When I come to the specific page of Amatsu, want to see more about the practitioner and maybe to explain how a session happens + I can book a treatment
+	> * photo of practitioner next to brief biography 
+	> * explanaton of a treatment
+	> * in the Amatsu page, I can click on “book a treatment” which takes me to "Contact page" (__CALL FOR ACTION__)
 
+__Contact page__
+1. As someone interested to book a lesson or treatment, I want to see clear prices:
+	> * list of prices and what each price is associated with
+2. As someone interested to book a lesson or treatment, I want to be able to easily contact the practitioner
+	> * simple __contact form__ with a drop down menu to choose the topic (Qigong lesson or Amatsu treatment or general query)
 
-__List of wireframes made before building the website__ 
+### Main existing Features
+* Feature 1 - __Logo__ in top left corner which redirects to "Home page"" and disappear when scrolling
+* Feature 2 - An user friendly __navigation bar__ which background color and text color changes when hovered, repeated on each page
+* Feature 3 - __Footer__ with social media links and button to take users to "Contact page", repeated on each page
+* Feature 4 - Between 1 and 2 __Call for action__ buttons on each page which re-directs to other pages of the website and mainly to contact practitioner to increase client base
+* Feature 5 - Testimonials of clients displayed as __carrousel__ on the "Home page" to attract attention
+* Feature 6 - A __full background image__ on "Home Page" and __banner images__ on other pages to give a natural and relaxing atmosphere to website
+* Feature 7 - A __timeline__ of the practioner showing his personal growth on "About page"
+* Feature 8 - A __video__ embeded from YouTube displayed on "Qigong page"
+* Feature 9 - __Stones placed on top of each other__ showing the list of health benefits with icons from an Amatsu treatment
+* Feature 10 - __cards with icons__ showing how a treatment happens
+* Feature 11 - __Contact form__ with validation showing if correct format of email address not entered (only static as no JS)
+
+### Features Left to Implement
+ * A calendar with availability from the practitioner where clients can book themselves in (JS needed)
+ * More videos from practitioner so he can start an online training and increases potential followers and clients (not only local, practitioner not ready yet)
+ * More information about healthy cooking and gardening as other passions of client and in connection with passion of natural healing
+
+### List of wireframes made before building the website 
 
 I used Balsamic tool for the wireframes and attached them to the directory in assets. I spent a considerable amount of time doing wireframes in details as I had no clue of design before and wanted to have a clear idea of how the website looked like.
 
@@ -132,44 +166,20 @@ During mentoring session, I was for example advised to push down some content in
 
 The footer changed completely during coding phase while the navbar was greatly improved thanks to more option for color and fonts.
 
-
-
-
-
-
-## Existing Features
-* Feature 1 - allows users X to achieve Y, by having them fill out Z
-
-...
-For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
-
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
-
-* Features Left to Implement
- * A calendar with availability from the practitioner where clients can book themselves in (JS needed)
- * 
-
 # Technologies Used
-TO COMPLETE
-
-Bootstrap
-Font awesome
-Google fonts
-Pexels for image
-
-# Media and Content origin
-
-* The full background image and all banner images were all obtained from [Pexels](https://www.pexels.com) website, via the free download option, then compressed via [Tiny.jpg](https://tinyjpg.com) and uploaded to assets/images.
-
-* The logo was designed by Anaelle DENIKINE specifically for this project and then converted as a Favicon via https://favicon.io/favicon-converter/.
-
-* Photo and content on AboutMe page as well as the testimonials of the Home Page were provided by the practitioner
-
-* Other photo used on Qigong page was obtained from https://www.huffpost.com/entry/10-reasons-to-get-to-know
-
-* The video on the Qigong page is from https://www.renxueinternational.org
-
-* Other contents about Amatsu and Qigong were all obtained from https://www.renxueinternational.org and http://www.liath.ie/, and referred directly on the website on each page
+- This website used HTML and CSS programming languages.
+- One feature also needed JS language which was provided by Simen Dehlin (mentor) via Slack
+- [AWS Cloud9](https://www.awseducate.com/student/s/awssite) - I used __AWS Cloud9__ as my IDE for the development of this website.
+- [BootstrapCDN](https://www.bootstrapcdn.com/) - The website is using __Bootstrap4__ as the basic structure and grid of the website and to increase the responsiveness of the website.
+- [FontAwesome](https://kit.fontawesome.com/f7e192f540.js) - The website is using __Font Awesome__ to display many icons on all pages
+- [Google Fonts](https://fonts.google.com/)- The website uses __3 different Google fonts__ to style the content text and headings - Url imported in CSS
+- [Youtube](https://www.youtube.com/embed/7QMdT02TVnQ) - The website used __YouTube__ to host the video for the "Qigong page". 
+- [jQuery](https://jquery.com/) and [Popper.js](https://popper.js.org/) - The website uses __jQuery__ and __Popper.js__ to bring in Javascript which makes the navbar responsive 
+- [AutoPrefixer](https://autoprefixer.github.io/) - I have used __AutoPrefixer__ to make sure the css code worked on all browsers
+- [Pexels](https://www.pexels.com) - Website imported images from __Pexels__ for the full background image and all banners image
+- [Tiny.jpg](https://tinyjpg.com) - I have used __Tinyjpg__ to compress all images of the website to increas the website loading on browser
+- [ColorSpace](https://mycolor.space) - I have used __ColorSpace__ to find matching colors for the website
+- [Balsamic](https://balsamiq.cloud) - I have used __Balsamic__ to build the wireframes which I then exported to the IDE
 
 # Testing
 
@@ -191,23 +201,48 @@ students for help with identifying the problem and advice for tackling same.
 
 
 
-# Deployment
 
-After you've created either a master or gh-pages branch, you can set one as your publishing source so that your site will be published.
-Enabling GitHub Pages to publish your site from master or gh-pages
-To select master or gh-pages as your publishing source, you must have the branch present in your repository. If you don't have a master or gh-pages branch, you can create them and then return to source settings to change your publishing source.
-On GitHub, navigate to your GitHub Pages site's repository. 
-Under your repository name, click  Settings 
-Use the Select source drop-down menu to select master or gh-pages as your GitHub Pages publishing source. 
-Click Save. 
-HOW TO RUN CODE LOCALLY
-On GitHub, navigate to the main page of the repository. Note: If the repository is empty, you can manually copy the repository page's URL from your browser and skip to step four. 
-Under the repository name, click Clone or download. 
-In the Clone with HTTPs section, click  to copy the clone URL for the repository 
-Open Terminal. 
-Change the current working directory to the location where you want the cloned directory to be made. 
-Type git clone, and then paste the URL you copied in Step 2. $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY 
-Press Enter. Your local clone will be created. 
+
+
+# Media and Content origin
+
+* The full background image and all banner images were all obtained from [Pexels](https://www.pexels.com) website, via the free download option, then compressed via [Tiny.jpg](https://tinyjpg.com) and uploaded to assets/images.
+
+* The logo was designed by Anaelle DENIKINE specifically for this project and then converted as a Favicon via https://favicon.io/favicon-converter/.
+
+* Photo and content on AboutMe page as well as the testimonials of the Home Page were provided by the practitioner
+
+* Other photo used on Qigong page was obtained from https://www.huffpost.com/entry/10-reasons-to-get-to-know
+
+* The video on the Qigong page is from https://www.renxueinternational.org
+
+* Other contents about Amatsu and Qigong were all obtained from https://www.renxueinternational.org and http://www.liath.ie/, and referred directly on the website on each page
+
+
+
+# Deployment
+I have been using the Integrated development environment (IDE) [AWS Cloud9](https://www.awseducate.com/student/s/awssite) to develop this milestone project. 
+After creating a new GitHub repository, I linked it on the terminal of my IDE. I could then commit any update of my code and push it to the remote repository so it could be regularly backed up and accessed by others.
+
+To deploy the website from the GitHub repository to its published GitHub page, I followed the steps as below:
+
+__Enabling GitHub Pages to publish site from master as a publishing source__
+1. Navigate to GitHub Pages site's repository
+2. Under repository name, clicked Settings
+3. Used "Select source drop-down menu" to select master as my GitHub Pages publishing source
+4. Clicked save 
+
+When I submitted this Milestone project, I confirmed that the Development Branch and Master Branch are identical. 
+
+__HOW TO RUN CODE LOCALLY__
+
+1. On GitHub, navigate to the main page of the repository
+2. Under the repository name, click Clone or download
+3. In the Clone with HTTPs section, click to copy the clone URL for the repository
+4. Open Terminal
+5. Change the current working directory to the location where you want the cloned directory to be made
+6. Type git clone, and then paste the URL you copied in Step 2 when git clone: https://github.com/YOUR-USERNAME/YOUR-REPOSITORY 
+7. Press Enter > Your local clone will be created.
 
 # Credits 
 TO ADD AND DESIGN WITH MARKDOWN
@@ -216,12 +251,12 @@ https://teamtreehouse.com/community/div-hidden-below-fixed-position-navbar-clear
 Banner image code technics found in the link below:
 https://stackoverflow.com/questions/38038056/adding-a-background-image-just-below-the-navigation-bar
 
-# Acknowledgements
+# Special thanks
 
 - I received inspiration for this project from Rainer Puehringer who is the practitioner showcased on the website and who was kind enough to explain briefly the practices and share contents for the website.
-- To Anaelle for designing the logo of the website so efficiently and who managed to make a beautiful one, reflecting the ambiance of the website by using same colors. She also helped me to test website and provided feedback throughout the project time.
-- To Anna G., other student on Slack channel who encouraged me during research and design, thanks to her lead sessions, all resources she provided to build a kick-ass milestone project, and for answering questions... Although I never copied anything, some of my website design got inspired from her website.
+- To Anaelle Denikine for designing the logo of the website so efficiently and who managed to make a beautiful one, reflecting the ambiance of the website by using same colors. She also helped me to test website and provided feedback throughout the project time.
+- To [Anna Greaves](https://github.com/AJGreaves), other student on Slack channel who encouraged me during research and design, thanks to her lead sessions, all resources she provided to build a kick-ass milestone project, and for answering questions... Although I never copied anything, some of my website design got inspired from her website.
 - To Simen Dehlin for answering technical questions, helping me to tackle two CSS queries and provided CodePen examples which I referred on the style.css via comment and for providing a very detailed feedback on the website! 
-- To Anthony, current lead for usercentric slack channel, who provided such a useful resource for research and tools. This will follow me through all milestones!
+- To [Anthony O'Brien](https://github.com/auxfuse), current lead for usercentric slack channel, who provided such a useful resource for research and tools. This will follow me through all milestones!
 
 __Thank you all!__
