@@ -180,6 +180,7 @@ The footer changed completely during coding phase while the navbar was greatly i
 - [Tiny.jpg](https://tinyjpg.com) - I have used __Tinyjpg__ to compress all images of the website to increas the website loading on browser
 - [ColorSpace](https://mycolor.space) - I have used __ColorSpace__ to find matching colors for the website
 - [Balsamic](https://balsamiq.cloud) - I have used __Balsamic__ to build the wireframes which I then exported to the IDE
+- [Favicon converter](https://favicon.io/favicon-converter/) - I used Favicon converter to convert the logo into a favicon which I was able to insert in the asset folder and I tested it to be working
 
 # Testing
 
@@ -196,10 +197,6 @@ Since I started to build the structure of the website and added the first line o
 For each feature I was working on, I tried to preview it in Chrome Dev tools to understand quickly which HTML or CSS would cause a certain effect and correct it as soon as possible. 
 This allowed me to fully comprehend the languages and push to GitHub only after I made the whole feature was working well.
 
-Each element of each page was tested to ensure its features worked as expected and was specifically responsive on mobile and small devices. For this, I used the device selector through the
-dev tools and selected each device to test each element. I also made sure to increase and decrease screen size of the browser directly to see the breakpoints and correct if needed. 
-Whenever an error was noticed, I used the dev tools to apply or change certain styles and if successful, copied it to my IDE.
-
 Generally, I quickly noticed that the tablet devices with a medium size was requiring more attention as the responsiveness was working poorly. So when I could I added more Bootstrap grid columns to fix the responsiveness.
 This has been then one of my preoccupation for the whole testing.
 
@@ -208,10 +205,49 @@ Then when I could not find a solution anywhere else, I would turn to Slack and a
 
 ### Testing in different browsers
 
+I used Google Chrome as my primary browser and constantly tested it on my mobile phone also using the same browser.
+As I worked on a Mac, I also tested the website on Safari regularly and never found any specific issue.
+
+When I asked friends to test it on Internet Explorer, it seems that some issues occurs, such as the attention text moving down when screen size was reduced on the "Home Page", the list of benefits designed as stones on "Amatsu page" show squeezed and the cards of .
+
+As advised by Anna Greaves in her pdf document for milestone project, I used AutoPrefixer to add the appropriate vendor prefixe on css code to make sure it works on most browsers. I could not test it again on Internet Explorer to see if it is working.
+
+At the moment the website has been tested on Safari, Internet Explorer, Google Chrome, Microsoft Edge, Mozilla Firefox. The website works and functions as expected on Google Chrome, Microsoft Edge, Opera, Mozilla Firefox but has flaws on Internet Explorer.
+Could not find a way to correct those errors on Internet Explorer.
 
 
+### Testing for each section
 
+Each element of each page was tested to ensure its features worked as expected and was specifically responsive on mobile and small devices. For this, I used the device selector through the
+dev tools and selected each device to test each element. I also made sure to increase and decrease screen size of the browser directly to see the breakpoints and correct if needed. 
+Whenever an error was noticed, I used the dev tools to apply or change certain styles and if successful, copied it to my IDE.
 
+When the website was ready, I tested each section one by one and found singular errors
+
+Examples of errors I found during constant testing:
+
+1. !important was added next nav-link:hover text color as it was cancelled automatically by the Bootstrap class
+2. Background-color of navbar removed on smaller screens for cleaner design > set to transparent and media query to add color
+3. When I finished Amatsu page, I tested it and found that there was a slight margin on the right of the page on smaller query. After more research and more playing around, I found that the small image was not responsive which means the image was coming out of the screen and created this extra margin
+4. Another margin-right appeared after Qigong page, but after testing it on Dev tools, I found that one container was not properly closed which means the padding was repeated twice
+
+After asking for feedback from the slack community, I received a detailed feedback from Simen Dehlin and tried to correct my code based on his suggestions:
+1. Consider add a closing border on about left hand side else it looks like it's floating in mid air > __done__
+2. Consider make the button on the home page top slider bigger to empesie to learn more > __done__
+3. Consider remove the hover effect on the font awesome icon as it looks horrible with a underline. > __done__ after research
+4. Changed version of BootstrapCDN, Popper and JS based on his suggestions
+5. Removed link to BootstrapCDN for Font Awesome and replaced with the new FontAwesome 5 kit script
+6. Contact form did not show what was the error so could not confirm if content is valid > __done__, added "needs-validation" bootstrap class
+7. Consider adding smooth-scroll to your page this will give a better UX experience > __done__
+8. Removed custom css of text-center, text-uppercase, as already existing with BootStrap
+9. Consider declare your font in the  body element and then override where you want a different font. This goes into DRY as you declare the code once and only override when needed. > __done__
+
+A particularly useful form for describing your testing process is via scenarios, such as:
+Contact form:
+Go to the "Contact Us" page
+Try to submit the empty form and verify that an error message about the required fields appears
+Try to submit the form with an invalid email address and verify that a relevant error message appears
+Try to submit the form with all inputs valid and verify that a success message appears.
 
 
 
@@ -255,12 +291,24 @@ __HOW TO RUN CODE LOCALLY__
 6. Type git clone, and then paste the URL you copied in Step 2 when git clone: https://github.com/YOUR-USERNAME/YOUR-REPOSITORY 
 7. Press Enter > Your local clone will be created.
 
-# Credits 
-TO ADD AND DESIGN WITH MARKDOWN
+### Work based on other code.
 
-https://teamtreehouse.com/community/div-hidden-below-fixed-position-navbar-clearfix-issues-with-css
-Banner image code technics found in the link below:
+* I used part of the code from Resume Mini-Project for the timeline section and the social media icon (referenced as comments in css file)
+
+* Banner image code technics found in the link below:
 https://stackoverflow.com/questions/38038056/adding-a-background-image-just-below-the-navigation-bar
+
+* logo disappear when scrolling down thanks to a codepen and js code created by Simen Dehlin via https://codepen.io/Eventyret/pen/RXBNaJ
+
+* burger icon inspired from https://mdbootstrap.com/docs/jquery/navigation/hamburger-menu/
+ 
+* trick to remove underline on font awesome icon when hover: https://codepen.io/jessicalyschik/pen/MJrwwx
+
+* found css trick for a full background image here: https://css-tricks.com/perfect-full-page-background-image/
+
+* found css trick to make the full background image show below the fixed navbar: https://teamtreehouse.com/community/div-hidden-below-fixed-position-navbar-clearfix-issues-with-css
+
+* custom css of Stone Section was suggested by Simen Dehlin in slack so the stones are centered on top of each other: https://codepen.io/Eventyret/pen/PMJrNq but did not copy HTML markup
 
 # Special thanks
 

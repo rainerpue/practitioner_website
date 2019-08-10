@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Advent+Pro:100,200,300,400,500,600,700|Quicksand:300,400,500,700|Caveat:400,700');
 
+/* scroll-behavior suggested by the mentor Simen Dehlin */
 html {
     scroll-behavior: smooth;
 }
@@ -143,7 +144,8 @@ a {
 /* section divider */
 
 .section-divider-short,
-.section-divider-price {
+.section-divider-price,
+.section-divider-long {
     width: 75px;
     height: 5px;
     border: 0;
@@ -153,8 +155,6 @@ a {
 .section-divider-long {
     width: 100%;
     height: 10px;
-    border: 0;
-    background-color: #384955;
     margin: 0;
 }
 
@@ -253,6 +253,7 @@ a {
     margin-top: .5rem;
 }
 
+/* css code for social media icon is copied and slightly changed from Resume Mini-Project */
 .socialmedia i {
     width: 25px;
     height: 25px;
@@ -289,7 +290,6 @@ a {
     background: url(../images/home-image.jpg) no-repeat center center fixed;
     background-size: cover;
     padding-top: 100px;
-    /*found css trick here: https://teamtreehouse.com/community/div-hidden-below-fixed-position-navbar-clearfix-issues-with-css */
 }
 
 .opaque-overlay {
@@ -301,6 +301,7 @@ a {
     background: rgba(0, 0, 0, 0.2);
 }
 
+/*found css trick here: https://teamtreehouse.com/community/div-hidden-below-fixed-position-navbar-clearfix-issues-with-css */
 .attention {
     color: #fafafa;
     font-size: 40px;
@@ -343,8 +344,6 @@ blockquote {
     margin-bottom: 20px;
 }
 
-
-
 /* main content for each page */
 
 .main-content {
@@ -353,12 +352,6 @@ blockquote {
     padding-bottom: 5px;
     padding-right: 30px;
     line-height: 200%;
-}
-
-.section-column {
-    display: table-cell;
-    padding: 0 30px 30px;
-    float: none;
 }
 
 .intro-section {
@@ -374,8 +367,6 @@ blockquote {
     margin-bottom: 15px;
 }
 
-
-
 /* links to other websites on about page */
 
 .links {
@@ -387,7 +378,7 @@ blockquote {
     color: #FF8863;
 }
 
-/* timeline implemented from the Resume Mini-project in the User Centric module */
+/* timeline copied and slightly changed from the Resume Mini-project in the User Centric module */
 
 .timeline {
     margin: 0;
@@ -434,8 +425,6 @@ blockquote {
     background-color: #384955;
 }
 
-
-
 /* qualifications */
 
 .list-row {
@@ -479,7 +468,7 @@ blockquote {
     min-height: 50vh;
     padding-bottom: 15px;
 }
-
+/* css was suggested to be added by W3 Validator for CSS */
 iframe {
     border: none;
 }
@@ -540,7 +529,7 @@ iframe {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    /* this part of custom css was suggested by Eventyret Mentor in slack */
+    /* this part of custom css was suggested by Simen Dehlin in slack so the stones are centered on top of each other: https://codepen.io/Eventyret/pen/PMJrNq but slightly different due to HTML markup*/
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -559,7 +548,7 @@ iframe {
 
 /* treatment cards */
 
-/* to justify space all around the cards and center found trick by looking at another student website (Anna G.) */
+/* Autoprefixer added !important here as well as -ms-flex-pack: distribute!important; */
 
 .card-row {
     -ms-flex-pack: distribute!important;
@@ -614,20 +603,20 @@ iframe {
         background-color: #FAE2CB;
     }
 }
-
+/* media query to make the logo bigger to match the navbar height on bigger screens */
 @media (min-width: 768px) {
     .navbar-brand>img {
         height: 100px;
         width: 150px;
     }
 }
-
+/* media query to make the full background image on home page to take 95% of the screen viewport minimum */
 @media (min-width: 768px) {
     .home-image {
         min-height: 95vh;
     }
 }
-
+/* media query to make the attention text falls on a second line on bigger screens */
 @media (min-width: 768px) {
     .attention {
         width: 50%;
@@ -643,40 +632,10 @@ iframe {
     }
 }
 
+/* media query for adding border around the timeline on bigger screens to add UX visuals */
 @media (min-width: 768px) {
     .history-items {
         border: 10px solid;
-    }
-}
-
-@media (min-width: 768px) {
-    a {
-        padding-left: 0;
-    }
-}
-
-@media (min-width: 768px) {
-    .section-column {
-        padding: 0 50px 0;
-    }
-}
-
-@media (min-width: 768px) {
-    #video {
-        padding-bottom: 0;
-    }
-}
-
-
-@media (min-width: 768px) {
-    a {
-        padding-left: 0;
-    }
-}
-
-@media (min-width: 768px) {
-    .section-column {
-        padding: 0 50px 0;
     }
 }
 
