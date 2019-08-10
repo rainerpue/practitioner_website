@@ -32,42 +32,61 @@ Not too much information and content, maybe more videos and photos
 __Why is this so special?__ Because not many similar websites for alternative healing and all the existing websites are full of text and content, not very attractive
 ————> strategy
 
+During my research in planning and designing the website, I asked a few questions to some friends who could be potential clients and also the practitioner himself. From those questions and my own research of other websites and practice, came the user stories below.
+Before the user stories, I wanted to add here a few questions asked and their answers.
 
-## User Stories:
+1. What does the User expect?
+	* I expect a professional looking and easy to navigate website with easy to read  information and easy to find contact details.  
+2. How a website should look credible and trustworthy?
+	* This is very important. In my opinion websites for alternative medicine often look very dodgy, bad colours, font, very bad layout, not easy to read at all. It does not create trust. It creates the feeling that the person might not be credible at all. 
+3. What do you expect?
+	* A website design that is ‘on brand’ with the practice. Use modern design, clean layout. It should look a bit more like a spa website and less like a car repair website
+4. How should it look valuable enough for me to stay?
+	* Easy to navigate tabs, good info on how to get in touch, clear prices, testimonials from existing clients, a nice bio/about page. No advertisements
+5. When you go to a particular site, where do you go first?
+	* Depends on why I visited the page, but in many cases to the ‘About’ tab to find out more about the person behind the product/brand
+
+
+## User Stories and Features:
+
+During the scope plane and while establishing the user stories for each page and making wireframes, the following features were decided. 
+
+This helped me to plan ahead and also to work through specific sprints to implement one feature at a time, answering one user story at a time... 
 
 __For the Home page__
-1. As a user, when I land on a website, I am expecting a title with a logo or a photo, so I know where I am 
-	> logo with Rainer’s name and two practices which will be repeated on each page
-2. As a general website user, when I go to any website, I usually expect a navigation bar to be at the top of the page where a few menus are available to find out more
+1. As a user, when I land on a website, I am expecting a title with a logo or a photo, so I know where I am:
+	> logo with Rainer’s name which will be repeated on each page and as expected on modern website, which can take me back to Home page
+2. As a general website user, when I go to any website, I usually expect a navigation bar to be at the top of the page with few menus items to navigate easily to other pages:
 	> * navbar with different menu items which stay fixed on top of the page when scrolling down the page and which will appear on each page
+	> * to give space, navbar will be replaced by a __burger menu__ on smaller screen and toggle down the navbar vertically
+	> * to give space again, logo will disappear when scrolling down the page
 	> * navbar should be a band of unified color with menu items on it
-3. As someone closed to nature, I expect a full image with green shades or flowers when I arrive on the website, so I know this is related to me
-	> a full screen picture for home page
-4. As a person looking to heal or live better, I expect to see a question related to me and my state, which can be a call for action to know more
+3. As someone closed to nature, I expect a full image showing nature when I arrive on the website, so I know this is related to me:
+	> a full background image for home page
+4. As a person looking to heal or live better, I expect to see a question related to me and my state, which can be a call for action to know more:
 	> question overlaying on full screen image
-5. As a potential client, when I arrive on this website, I expect to see testimonials from other clients who already had therapy sessions or lessons with this practitioner
-	> band of one testimonial at a time with a carousel (white background #fafafa with black font) with a link to About Me to know more about practitioner
-6. As generally unaware of alternative therapies, when I land on this website, I expect to have a quick intro about what is the website about
+5. As a potential client, when I arrive on this website, I expect to see testimonials from other clients who already had therapy sessions or lessons with this practitioner:
+	> band of one testimonial at a time with a __carousel__
+6. As generally unaware of alternative therapies, when I land on this website, I expect to have a quick intro about what is the website about:
 	> brief intro about Qigong and Amatsu with link to full pages (call to action) below the testimonials
-7. As someone interested by Qigong and want to find more, I want to find a quick link to get more information in the navbar
+7. As someone interested by Qigong and want to find more, I want to find a quick link to get more information in the navbar:
 	> a direct navlink in the navbar about Qigong to bring to another page
-8. As someone looking to receive Amatsu therapy session, I want to find a quick link to get more information and book a session in the navbar
+8. As someone looking to receive Amatsu therapy session, I want to find a quick link to get more information and book a session in the navbar:
 	> a direct navlink in the navbar about Amatsu to open another page 
-9. As a usual website user, I expect a contact call for action button so I can go further and reach out to the practitioner
-	> Contact Me button at the right side of the navbar and with a special color to attract attention
-10. As a usual website user, when I visit any website, I expect a footer with social media links to have more way to reach out to practitioner
+9. As a usual website user, I expect a contact call for action button so I can go further and reach out to the practitioner:
+	> Contact Me button at the right side of the navbar
+10. As a usual website user, when I visit any website, I expect a footer with social media links to have more way to reach out to practitioner:
 	> one small band of footer with social media links
-11. As an interested user and potential follower of those practices, when I finish exploring this website, I expect to have links which can easily found at the bottom of the page in the footer so can expand my knowledge by visiting other related websites
-	> 2 or 3 different links to other websites
 
 __About Me Page__
 1. As a potential client, when I visit a website about a practitioner:
- * I want to know more about the person and the qualifications so I know if I can relate and rely on him and his skills. 
-    > About me page accessible from the navlink and the button on testimonial.
+ * I want to know more about the person and the qualifications so I know if I can relate and rely on him and his skills: 
+    > About me page accessible from the navlink
+	> a nice photo of the practitioner
 
- * I want to find out more about his life, his journey to the two practices he is passionate about.
+ * I want to find out more about his life, his journey to the two practices he is passionate about:
  
-    > The page includes a timeline of Rainer’s life
+    > The page includes a __timeline__ of Rainer’s life
 
     > a brief intro about his background, his other skills and how it is all related by a common passion
 
@@ -113,7 +132,9 @@ During mentoring session, I was for example advised to push down some content in
 
 The footer changed completely during coding phase while the navbar was greatly improved thanks to more option for color and fonts.
 
-# Features
+
+
+
 
 
 ## Existing Features
@@ -125,9 +146,8 @@ For some/all of your features, you may choose to reference the specific project 
 In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
 
 * Features Left to Implement
- * A calendar with availability from the practitioner where clients can book themselves in
+ * A calendar with availability from the practitioner where clients can book themselves in (JS needed)
  * 
-* Another feature idea
 
 # Technologies Used
 TO COMPLETE
@@ -137,16 +157,21 @@ Font awesome
 Google fonts
 Pexels for image
 
-# Media
-TO DESIGN WITH MARKDOWN
+# Media and Content origin
 
-The full background image and all banner images were all obtained from Pexels website, via the free download option, then compressed via Tiny.jpg and uploaded to assets/images.
-One photo of practitioner on AboutMe
-Other photos used in this site were obtained from https://www.huffpost.com/entry/10-reasons-to-get-to-know / http://www.mnbodynsoulacupuncture.com/health-benefits-tai-chi-qigong/ / https://www.amatsu.ca 
-The video on the Qigong website is from https://www.renxueinternational.org
+* The full background image and all banner images were all obtained from [Pexels](https://www.pexels.com) website, via the free download option, then compressed via [Tiny.jpg](https://tinyjpg.com) and uploaded to assets/images.
+
+* The logo was designed by Anaelle DENIKINE specifically for this project and then converted as a Favicon via https://favicon.io/favicon-converter/.
+
+* Photo and content on AboutMe page as well as the testimonials of the Home Page were provided by the practitioner
+
+* Other photo used on Qigong page was obtained from https://www.huffpost.com/entry/10-reasons-to-get-to-know
+
+* The video on the Qigong page is from https://www.renxueinternational.org
+
+* Other contents about Amatsu and Qigong were all obtained from https://www.renxueinternational.org and http://www.liath.ie/, and referred directly on the website on each page
 
 # Testing
-***
 
 * __Final and official testing__: 
   * [W3 MarkUp validation](https://validator.w3.org)
@@ -167,7 +192,6 @@ students for help with identifying the problem and advice for tackling same.
 
 
 # Deployment
-TO DESIGN WITH MARKDOWN
 
 After you've created either a master or gh-pages branch, you can set one as your publishing source so that your site will be published.
 Enabling GitHub Pages to publish your site from master or gh-pages
@@ -192,12 +216,12 @@ https://teamtreehouse.com/community/div-hidden-below-fixed-position-navbar-clear
 Banner image code technics found in the link below:
 https://stackoverflow.com/questions/38038056/adding-a-background-image-just-below-the-navigation-bar
 
-
-# Content
-TO DO
-
 # Acknowledgements
-TO COMPLETE
 
-I received inspiration for this project from Rainer Puehringer who is the practitioner showcased on the website 
-To Anaelle for designing the logo of the website
+- I received inspiration for this project from Rainer Puehringer who is the practitioner showcased on the website and who was kind enough to explain briefly the practices and share contents for the website.
+- To Anaelle for designing the logo of the website so efficiently and who managed to make a beautiful one, reflecting the ambiance of the website by using same colors. She also helped me to test website and provided feedback throughout the project time.
+- To Anna G., other student on Slack channel who encouraged me during research and design, thanks to her lead sessions, all resources she provided to build a kick-ass milestone project, and for answering questions... Although I never copied anything, some of my website design got inspired from her website.
+- To Simen Dehlin for answering technical questions, helping me to tackle two CSS queries and provided CodePen examples which I referred on the style.css via comment and for providing a very detailed feedback on the website! 
+- To Anthony, current lead for usercentric slack channel, who provided such a useful resource for research and tools. This will follow me through all milestones!
+
+__Thank you all!__

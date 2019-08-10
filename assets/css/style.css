@@ -143,6 +143,10 @@ a {
     color: #FAE2CB;
 }
 
+.btn-amatsu {
+    margin-bottom: 8px;!important
+}
+
 /* section divider */
 
 .section-divider-short,
@@ -176,6 +180,8 @@ a {
     -moz-transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
 }
+
+/* logo disappear when scrolling down thanks to a codepen and js code created by Simen Dehlin via https://codepen.io/Eventyret/pen/RXBNaJ */
 
 .navbar-brand {
     opacity: 1;
@@ -307,7 +313,7 @@ a {
     font-size: 40px;
     font-weight: 600;
     padding-left: 15px;
-    padding-top: 300px;
+    padding-top: 200px;
 }
 
 /* testimonials in carrousel */
@@ -516,7 +522,7 @@ iframe {
     margin-bottom: 10px;
     margin-left: 5px;
     display: flex;
-    /* this part of custom css was suggested by Eventyret Mentor in slack so the stones are centered on top of each other: https://codepen.io/Eventyret/pen/PMJrNq */
+    /* this part of custom css was suggested by Simen Dehlin in slack so the stones are centered on top of each other: https://codepen.io/Eventyret/pen/PMJrNq */
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -615,14 +621,8 @@ iframe {
 
 @media (min-width: 768px) {
     .attention {
-        width: 60%;
+        width: 50%;
         font-size: 50px;
-    }
-}
-
-@media (min-width: 768px) {
-    .slide {
-        min-height: 20vh;
     }
 }
 
