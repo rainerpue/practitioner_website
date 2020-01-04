@@ -1,5 +1,5 @@
 <h1 align="center">
-  <a href="https://github.com/mkuti/milestone_1/blob/master/assets/images/logo.jpg" target="_blank"><img src="assets/images/logo.jpg" alt="Rainer Puehringer Logo"/></a>
+  <a href="https://mkuti.github.io/yuan-gong-and-amatsu-with-rainer/" target="_blank"><img src="assets/images/logo.jpg" alt="Rainer Puehringer Logo"/></a>
 </h1>
 
 <div align="center">
@@ -8,7 +8,7 @@
 </div>
 <div align="center"> 
 
-[Website is deployed via GitHub pages here](https://mkuti.github.io/milestone_1/)
+[Website is deployed via GitHub pages here](https://mkuti.github.io/yuan-gong-and-amatsu-with-rainer/)
 </div>
  
 A natural and minimalist website for an alternative medicine practitioner based in County Clare, Ireland. 
