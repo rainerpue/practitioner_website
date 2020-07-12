@@ -6,7 +6,7 @@ const contactForm = document.getElementById('contact-form')
  */
 contactForm.addEventListener('submit', function(e) {
                 e.preventDefault();
-                emailjs.sendForm('contact_service', 'contact_form', this)
+                emailjs.sendForm('rainer75', 'webcontact', this)
                 .then(function(response) {
                     Swal.fire({
                     title: "Your email has been sent!",
