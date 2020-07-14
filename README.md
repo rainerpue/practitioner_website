@@ -1,17 +1,17 @@
 <h1 align="center">
-  <a href="https://mkuti.github.io/yuan-gong-and-amatsu-with-rainer/" target="_blank"><img src="assets/images/logo.jpg" alt="Rainer Puehringer Logo"/></a>
+  <img src="assets/images/logo.jpg" alt="Rainer Puehringer Logo"/>
 </h1>
 
 <div align="center">
 
-# YUAN GONG AND AMATSU WITH RAINER
+# Alternative Practitioner website
 </div>
 <div align="center"> 
 
 [Website is deployed via GitHub pages here](https://mkuti.github.io/yuan-gong-and-amatsu-with-rainer/)
 </div>
  
-A natural and minimalist website for an alternative medicine practitioner based in County Clare, Ireland. 
+A natural and minimalist website for an alternative medicine practitioner based in Ireland. 
 This practitioner is a therapist and teacher in Qigong and Amatsu but is also a qualified chef and a home gardener all related by his passion about living better, happier and in a more natural way. He knows how important it is to keep the body, mind and soul in balance which makes him very passionate to share and teach with others.
 
 Because of the absence of knowledge and interest in these types of practices coupled with the very amateurish existing websites for those types of practices, the main goal of the website is to give a basic intro while not overloading with too much content, having a modern designed, minimalist and relaxed website for both already convinced or new clients and to guide everyone towards useful knowledge to apply or contact directly the practitioner for more.
